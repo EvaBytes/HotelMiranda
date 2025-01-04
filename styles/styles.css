@@ -11,4 +11,37 @@
 }
 * body {
   min-width: 320px;
+}
+
+.nav {
+  padding: 1rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 5px 4px -3px rgba(0, 0, 0, 0.29);
+}
+.nav__menu-web {
+  display: none;
+}
+.nav__hamburger {
+  display: inline;
+  position: absolute;
+  top: 2.3rem;
+  left: 1.4rem;
+}
+.nav__logo {
+  display: inline;
+  top: 0.8rem;
+  right: 1.4rem;
+  margin-left: 2rem;
+}
+.nav__header-icons {
+  display: inline;
+  position: absolute;
+  top: 2.3rem;
+  right: 1.4rem;
+  margin-right: 0.5rem;
+}
+@media only screen and (min-width: 1000px) {
+  .nav__menu-mobile {
+    display: none;
+  }
 }/*# sourceMappingURL=styles.css.map */

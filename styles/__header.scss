@@ -1,0 +1,40 @@
+.nav {
+    padding: 1rem;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 5px 4px -3px rgba(0, 0, 0, 0.29);
+
+    &__menu-web{
+        display: none;
+    }
+
+    &__hamburger {
+        display: inline;
+        position: absolute;
+        top: 2.3rem;
+        left: 1.4rem;
+    }
+
+    &__logo {
+        display: inline;
+        top: 0.8rem;
+        right: 1.4rem;
+        margin-left: 2rem;
+    }
+
+    &__header-icons {
+        display: inline;
+        position: absolute;
+        top: 2.3rem;
+        right: 1.4rem;
+        margin-right: .5rem;
+    }
+
+
+@media only screen and (min-width: 1000px) {
+
+    &__menu-mobile {
+        display: none;
+    }
+}
+
+}
