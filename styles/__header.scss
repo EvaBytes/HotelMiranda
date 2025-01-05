@@ -3,8 +3,27 @@
     background-color: rgb(255, 255, 255);
     box-shadow: 0 5px 4px -3px rgba(0, 0, 0, 0.29);
 
-    &__menu-web{
+    &__menu-web {
         display: none;
+    }
+
+    &__menu-mobile {
+        font-family: sans-serif;
+        font-weight: bold;
+        color: black;
+        margin-bottom: 1rem;
+
+        li{
+            list-style: none;
+            font-size: 16px;
+            padding: .6rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            padding-bottom: 1rem;
+        }
     }
 
     &__hamburger {
@@ -28,13 +47,13 @@
         right: 1.4rem;
         margin-right: .5rem;
     }
-
+}
 
 @media only screen and (min-width: 1000px) {
-
-    &__menu-mobile {
+    .nav__menu-mobile {
         display: none;
     }
-}
+
 
 }
+
