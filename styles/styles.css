@@ -57,6 +57,9 @@
   right: 1.4rem;
   margin-right: 0.5rem;
 }
+.nav__header-icons img {
+  margin-left: 1.3rem;
+}
 
 @media only screen and (min-width: 1000px) {
   .nav__menu-mobile {
@@ -120,6 +123,7 @@
 .booking-form {
   padding: 1.5rem;
   background-color: rgb(34, 34, 34);
+  margin-bottom: 1rem;
 }
 .booking-form__title {
   margin-bottom: 20px;
@@ -132,17 +136,35 @@
   display: block;
   margin-bottom: 0.8rem;
 }
-.booking-form__input {
-  width: 100%;
-  padding: 10px;
+.booking-form__input-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid rgb(190, 173, 142);
   margin-bottom: 20px;
-  border: 1px solid #ccc;
-  background-color: rgb(34, 34, 34);
+  padding: 5px 0;
+}
+.booking-form__calendar-icon {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 10px;
+  background-size: contain;
+  z-index: 10;
+}
+.booking-form__input {
+  flex: 1;
+  padding: 0;
+  border: none;
+  background-color: transparent;
   color: rgb(104, 104, 104);
-  border-top: 0;
-  border-left: 0;
-  border-right: 0;
-  border-bottom: 1px solid rgb(149, 152, 154);
+  font-size: 0.9rem;
+}
+.booking-form__input::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+.booking-form__input:focus {
+  outline: none;
 }
 .booking-form__button {
   background-color: rgb(190, 173, 142);
@@ -150,7 +172,7 @@
   font-size: 0.9rem;
   font-weight: 400;
   letter-spacing: 2px;
-  padding: 0.8rem 1.2rem;
+  padding: 1rem 1.2rem;
   border: none;
   color: #fff;
   cursor: pointer;
