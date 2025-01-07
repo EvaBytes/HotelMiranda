@@ -2,7 +2,7 @@
 @import "const/mixins.scss";
 
 @import "styles/components/__button.scss";
-@import "styles/components/__header.scss";
+@import "styles/components/__hero.scss";
 @import "styles/components/__footer.scss";
 @import "styles/components/__cards.scss";
 
@@ -12,6 +12,8 @@
 @import "styles/pages/__bookingform.scss";
 @import "styles/pages/__aboutus.scss";
 @import "styles/pages/__footer.scss";
+@import "styles/pages/__rooms.scss";
+
 
 *{
     box-sizing: border-box;
