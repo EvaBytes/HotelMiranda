@@ -1,0 +1,19 @@
+@use "variables.scss" as *;
+
+@mixin defaultButton($backgroundColor, $hover-color, $text-color){
+    background-color: $beige;
+    margin: 1.5rem 0;
+    font-family: sans-serif;
+    font-size: .9rem;
+    font-weight: 400;
+    letter-spacing: 2px;
+    padding: 1rem 1.2rem;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+    &:hoover{
+        background-color: $hover-color;
+    }
+}

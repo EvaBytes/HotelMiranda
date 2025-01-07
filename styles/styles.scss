@@ -1,17 +1,17 @@
 @import "const/variables.scss";
 @import "const/mixins.scss";
 
-@import "components/buttons.scss";
-@import "components/header.scss";
-@import "components/footer.scss";
-@import "components/cards.scss";
+@import "styles/components/__button.scss";
+@import "styles/components/__header.scss";
+@import "styles/components/__footer.scss";
+@import "styles/components/__cards.scss";
 
 
-@import "__header.scss";
-@import "__hero.scss";
-@import "__bookingform.scss";
-@import "__aboutus.scss";
-@import "__footer.scss";
+@import "styles/pages/__header.scss";
+@import "styles/pages/__hero.scss";
+@import "styles/pages/__bookingform.scss";
+@import "styles/pages/__aboutus.scss";
+@import "styles/pages/__footer.scss";
 
 *{
     box-sizing: border-box;
