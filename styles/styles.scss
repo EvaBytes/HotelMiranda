@@ -14,6 +14,15 @@
     }
 }
 
+@import "const/variables.scss";
+@import "const/mixins.scss";
+
+@import "components/buttons.scss";
+@import "components/header.scss";
+@import "components/footer.scss";
+@import "components/cards.scss";
+
+
 @import "__header.scss";
 @import "__hero.scss";
 @import "__bookingform.scss";
