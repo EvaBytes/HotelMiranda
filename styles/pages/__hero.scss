@@ -35,29 +35,13 @@
     
 
     &__button__take{
-        font-family: sans-serif;
-        font-size: .9rem;
-        font-weight: 400;
-        letter-spacing: 2px;
-        padding: 1rem 1.5rem;
-        background: rgba(190, 173, 142, 1);
-        border: none;
-        color: #fff;
-        cursor: pointer;
-        transition: background-color 0.3s, color 0.3s;
+        @include defaultButton
     }
 
     &__button__learn-more {
-        font-family: sans-serif;
-        font-size: .9rem;
-        font-weight: 400;
-        letter-spacing: 2px;
-        padding: 1rem 1.5rem;
-        background: transparent;
-        border: 1px solid rgb(253, 253, 253);
-        color: #fff;
-        cursor: pointer;
-        transition: background-color 0.3s, color 0.3s;
+        @include defaultButton ($transparent)
+
+
     }
 }
 

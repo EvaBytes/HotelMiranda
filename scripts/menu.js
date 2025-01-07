@@ -7,7 +7,7 @@ hamburger.addEventListener("click", () => {
 
 const img = hamburger.querySelector("img");
     if (mobileMenu.classList.contains("active")) {
-        img.src = "images/Vector (2).png"; 
+        img.src = "assets/Close.png"; 
         img.alt = "Close Icon";
     } else {
         img.src = "images/Menu.png";
