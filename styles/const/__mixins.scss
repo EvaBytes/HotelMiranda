@@ -1,6 +1,4 @@
-@use "variables.scss" as *;
-
-@mixin defaultButton($backgroundColor, $hover-color, $text-color){
+@mixin defaultButton($backgroundColor, $text-color){
     background-color: $beige;
     margin: 1.5rem 0;
     font-family: sans-serif;
@@ -9,12 +7,12 @@
     letter-spacing: 2px;
     padding: 1rem 1.2rem;
     border: none;
-    color: #fff;
+    color:$text-color;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s;
 
     &:hoover{
-        background-color: lighten($bg-beige, 15%);
+        background-color: lighten($backgroundColor, 15%);
     }
 }
 
