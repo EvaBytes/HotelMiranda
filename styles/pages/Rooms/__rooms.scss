@@ -1,38 +1,79 @@
-@use 'const/mixins.scss' as *;
-@use 'const/variables.scss' as *;
+.room__list {
+    padding: 50px 0;
+    background-color: $graytwo;
 
-.hero__navegation{
-
-    position: absolute;
-    bottom: -0.1rem;
-    right: 1.25rem;
-    background-color: #fff;
-    padding: 1rem 1.5rem;
-    color: #000;
-    font-weight: 700;
-    font-size: 1rem;
-    letter-spacing: 1.09rem;
-    letter-spacing: -0.03rem;
-
-}
-
-.rooms {
-    overflow: hidden;
-    margin: 0 1.25rem;
-    margin-top: 3rem;
-
-    &__list {
+    &__container {
         display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
+        flex-wrap: wrap;
+        justify-content: space-between;
     }
-
-    & img {
-        width: 1rem;
-        height: 1rem;
+    
+    &__container__img {
+        margin: 1rem 1rem;
+        width: 90%;
+        height: 300px;
+        background-color: $lightgray;
+        
+    img {
+        width: 90%;
+        height: 60%;
+        object-fit: cover;
     }
 }
 
-.room__list__container__img{
-    @include center-content;
+    &__content {
+        width: 100%;
+        padding: 20px;
+        background-color: $white;
+        border-radius: 8px;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+
+        &__icons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 15px;
+        
+        img {
+            width: 30px;
+            height: 30px;
+            margin-right: 10px;
+        }
+    }
+
+    }
+
+.room {
+    &__title {
+        font-size: 28px;
+        font-weight: bold;
+        color: $black;
+        margin-bottom: 10px;
+
+        a {
+            text-decoration: none;
+            color: $black;
+        }
+    }
+
+
+    &__description {
+        color: $darkgray;
+        margin-bottom: 15px;
+    }
+    &__details {
+        display: flex;
+        justify-content: space-between;
+        font-weight: bold;
+        
+        span {
+            color: $beige;
+        }
+
+        a {
+            text-decoration: none;
+            color: $beige;
+        }
+    }
+    }
 }

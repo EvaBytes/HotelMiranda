@@ -1,3 +1,4 @@
+//BUTTONS
 @mixin defaultButton($backgroundColor, $text-color){
     background-color: $beige;
     margin: 1.5rem 0;
@@ -36,8 +37,19 @@
     font-weight: bold;
 }
 
-@mixin center-content {
+@mixin centerContent {
     display: flex;
     justify-content: center;
     align-items: center;
 }
+
+
+//FONTS
+
+@mixin fontStyle($family, $size, $weight: normal, $color: $black) {
+    font-family: $family;
+    font-size: $size;
+    font-weight: $weight;
+    color: $color;
+}
+
