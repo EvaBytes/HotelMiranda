@@ -198,4 +198,60 @@
 }
 .buttons__button__learn-more:hoover {
   background-color: #484848;
+}
+
+.luxury {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+.luxury__image {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: -2rem;
+}
+.luxury__image img {
+  width: 100%;
+  height: 80%;
+  display: block;
+}
+.luxury__image__rooms {
+  background-color: rgb(34, 34, 34);
+  color: #fff;
+  padding: 3rem 2rem;
+  width: 100%;
+  height: 60%;
+}
+.luxury__image__icon {
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+.luxury__image__title {
+  font-family: "Old Standard TT", "offline-old_standard_ttregular", "Roboto", sans-serif, arial;
+  font-size: 1.5rem;
+  font-weight: 100;
+  margin-bottom: 1rem;
+}
+.luxury__image__description {
+  font-family: "Roboto", "offline-roboto", "Archivo", sans-serif, arial;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+.luxury .rooms {
+  margin-top: 2rem;
+}
+.luxury .rooms__title {
+  font-family: "Archivo", "archivo-offline", "Roboto", sans-serif, arial;
+  font-size: 0.7rem;
+  letter-spacing: 0.2rem;
+  color: #888;
+  margin-bottom: 0.5rem;
+}
+.luxury .rooms__caption {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(34, 34, 34);
 }/*# sourceMappingURL=home.css.map */

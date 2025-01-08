@@ -1,63 +1,93 @@
 .nav {
-    padding: 1rem;
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 5px 4px -3px rgba(0, 0, 0, 0.29);
+    box-shadow: 0 5px 6px -3px rgba(0, 0, 0, 0.29);
+    position: relative; 
 
     &__menu-web {
         display: none;
     }
 
     &__menu-mobile {
+        display: none;
+        position: absolute;
+        top: 100%; 
+        left: 0;
+        width: 100%; 
         font-family: sans-serif;
         font-weight: bold;
         color: black;
-        margin-bottom: 1rem;
+        z-index: 1000;
+        background-color: white;
 
-        li{
+        &.active {
+            display: block; 
+        }
+
+        li {
             list-style: none;
             font-size: 16px;
-            padding: .6rem;
+            padding: 0.6rem;
         }
 
         a {
             text-decoration: none;
-            color: black;
+            color: $black;
             padding-bottom: 1rem;
+            display: block; 
         }
     }
 
     &__hamburger {
         display: inline;
         position: absolute;
-        top: 2.3rem;
+        top: 1.6rem; 
         left: 1.4rem;
+
+        img {
+            width: 18px;
+            height: 16px;
+        }
     }
 
     &__logo {
-        display: inline;
-        top: 0.8rem;
-        right: 1.4rem;
+        display: inline-block;
+        margin-top: .3rem;
         margin-left: 2rem;
     }
 
     &__header-icons {
         display: inline;
         position: absolute;
-        top: 2.3rem;
+        top: 1.5rem;
         right: 1.4rem;
-        margin-right: .5rem;
 
-        img{
+        img {
             margin-left: 1.3rem;
         }
     }
-}
 
-@media only screen and (min-width: 1000px) {
-    .nav__menu-mobile {
-        display: none;
+    @media only screen and (min-width: 1000px) {
+        &__menu-mobile {
+            display: none; 
+        }
+
+        &__menu-web {
+            display: flex;
+
+            li {
+                list-style: none;
+                font-size: 16px;
+                padding: 0.6rem;
+            }
+
+            a {
+                font-family: $archivo;
+                font-weight: 600;
+                text-decoration: none;
+                color: $black;
+                padding-bottom: 1rem;
+                display: block; 
+            }
+        }
     }
-
-
 }
-

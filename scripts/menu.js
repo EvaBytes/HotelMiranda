@@ -3,14 +3,13 @@ const mobileMenu = document.getElementById("mobileMenu");
 
 hamburger.addEventListener("click", () => {
     mobileMenu.classList.toggle("active");
-    
 
-const img = hamburger.querySelector("img");
+    const img = hamburger.querySelector("img");
     if (mobileMenu.classList.contains("active")) {
         img.src = "assets/Close.png"; 
         img.alt = "Close Icon";
     } else {
-        img.src = "images/Menu.png";
-        img.alt = "Menu Icon";
+        img.src = "assets/HamburgerMenu.png";
+        img.alt = "Hamburger Menu";
     }
 });
