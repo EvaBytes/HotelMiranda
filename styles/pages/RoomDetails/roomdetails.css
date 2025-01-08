@@ -1,0 +1,239 @@
+.details__hero {
+  background-color: rgb(51, 51, 51);
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+.details__hero__p {
+  font-family: "Oswald", "offline-oswald", "Archivo", sans-serif, arial;
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+  margin: 0;
+  text-align: left;
+}
+.details__hero__h1 {
+  font-family: "Old Standard TT", "offline-old_standard_ttregular", "Roboto", sans-serif, arial;
+  font-size: 3rem;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  margin: 0.5rem 0;
+  text-align: left;
+}
+.details__hero__navegation {
+  background-color: rgb(255, 255, 255);
+  display: inline-flex;
+  padding: 0.7rem 1.5rem;
+}
+.details__hero__navegation__return {
+  font-family: "Archivo", "archivo-offline", "Roboto", sans-serif, arial;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgb(34, 34, 34);
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+.details__hero span {
+  font-family: "Archivo", "archivo-offline", "Roboto", sans-serif, arial;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: rgb(190, 173, 142);
+}
+.details__hero #verticalbar {
+  font-family: "Archivo", "archivo-offline", "Roboto", sans-serif, arial;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgb(34, 34, 34);
+  margin: 0 0.5rem;
+}
+
+.booking-form {
+  padding: 1.5rem 2rem;
+  background-color: rgb(34, 34, 34);
+  margin-bottom: 1rem;
+}
+.booking-form__title {
+  margin-bottom: 20px;
+  font-family: "Roboto", "offline-roboto", "Archivo", sans-serif, arial;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+}
+.booking-form__label {
+  display: block;
+  margin-bottom: 0.8rem;
+}
+.booking-form__input-container {
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid rgb(190, 173, 142);
+  margin-bottom: 20px;
+  padding: 5px 0;
+}
+.booking-form__calendar-icon {
+  display: inline-block;
+  width: 17px;
+  height: 17px;
+  margin-right: 10px;
+  background-size: contain;
+  z-index: 10;
+}
+.booking-form__input {
+  flex: 1;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  font-family: "Roboto", "offline-roboto", "Archivo", sans-serif, arial;
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: rgb(119, 119, 119);
+}
+.booking-form__input::-webkit-calendar-picker-indicator {
+  display: none;
+  -webkit-appearance: none;
+}
+.booking-form__input:focus {
+  outline: none;
+}
+.booking-form__button {
+  background-color: rgb(190, 173, 142);
+  margin: 1.5rem 0;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding: 1rem 1.2rem;
+  border: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.booking-form__button:hoover {
+  background-color: #dad0bf;
+}
+@media only screen and (min-width: 1000px) {
+  .booking-form .nav__menu-mobile {
+    display: none;
+  }
+}
+
+.room-detail {
+  padding: 2rem;
+}
+.room-detail p {
+  font-family: "Roboto", "offline-roboto", "Archivo", sans-serif, arial;
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: rgb(119, 119, 119);
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+.room-detail__amenities__title {
+  font-family: "Archivo", "archivo-offline", "Roboto", sans-serif, arial;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+  margin-bottom: 0.5rem;
+}
+.room-detail__amenities__hr {
+  border-top: 1px solid rgb(194, 194, 194);
+  margin: 0.5rem 0;
+}
+.room-detail__amenities__ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin-top: 1.5rem;
+}
+.room-detail__amenities__ul li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: "Roboto", "offline-roboto", "Archivo", sans-serif, arial;
+  font-size: 1rem;
+  font-weight: normal;
+  color: rgb(119, 119, 119);
+}
+.room-detail__amenities__ul li img {
+  width: 20px;
+  height: 20px;
+}
+.room-detail__founder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 3rem;
+}
+.room-detail__founder__image {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  margin-bottom: 2rem;
+}
+.room-detail__founder__image img {
+  width: 120%;
+  height: 120%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 3px solid rgb(190, 173, 142);
+}
+.room-detail__founder__image__validated {
+  position: absolute;
+  bottom: 3.9rem;
+  left: 4.9rem;
+  padding: 0.3rem;
+}
+.room-detail__founder__image__validated img {
+  width: 30px;
+  height: 30px;
+}
+.room-detail__founder__name {
+  font-family: "Old Standard TT", "offline-old_standard_ttregular", "Roboto", sans-serif, arial;
+  font-size: 1.7rem;
+  font-weight: 400;
+  color: rgb(34, 34, 34);
+  margin: 0.5rem 0;
+}
+.room-detail__founder__rank {
+  font-family: "Oswald", "offline-oswald", "Archivo", sans-serif, arial;
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: rgb(190, 173, 142);
+  margin: 0.3rem 0;
+}
+.room-detail__founder__description {
+  font-family: "Roboto", "offline-roboto", "Archivo", sans-serif, arial;
+  font-size: 1rem;
+  font-weight: normal;
+  color: rgb(119, 119, 119);
+  margin-top: 0.5rem;
+  line-height: 1.5;
+  max-width: 300px;
+}
+.room-detail__cancellation {
+  margin-top: 2rem;
+}
+.room-detail__cancellation__title {
+  font-family: "Archivo", "archivo-offline", "Roboto", sans-serif, arial;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(51, 51, 51);
+  margin-bottom: 1rem;
+  border-bottom: 1px solid rgb(194, 194, 194);
+  padding-bottom: 0.5rem;
+  width: 100%;
+}
+.room-detail__cancellation__description {
+  font-family: "Roboto", "offline-roboto", "Archivo", sans-serif, arial;
+  font-size: 1rem;
+  font-weight: normal;
+  color: rgb(119, 119, 119);
+  line-height: 1.5;
+  margin-top: 1rem;
+}/*# sourceMappingURL=roomdetails.css.map */

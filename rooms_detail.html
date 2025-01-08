@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="./styles/pages/RoomDetails/roomdetails.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
@@ -49,14 +50,14 @@
 
     <main>
 
-        <section class="hero">
-            <p class="hero__p">THE ULTIMATE LUXURY</p>
-            <h1 class="hero__h1">Ultimate Room</h1>
+        <section class="details__hero">
+            <p class="details__hero__p">THE ULTIMATE LUXURY</p>
+            <h1 class="details__hero__h1">Ultimate Room</h1>
             
-            <div class="header__navegation">
-                <a class="header__navegation__return">Home</a>
+            <div class="details__hero__navegation">
+                <a class="details__hero__navegation__return">Home</a>
                 <span id="verticalbar">|</span>
-                <span>Rooms</span>
+                <span>Rooms Details</span>
             </div>
         </section>
 
@@ -93,7 +94,7 @@
 
         </section>
 
-        <section>
+        <section class="room-detail">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
             
             <div class="room-detail__amenities">
@@ -122,22 +123,25 @@
 
             <div class="room-detail__founder">
                 <div class="room-detail__founder__image">
-                    <img src="" alt="Founder picture" />
-                    <div class="room-detail__founder__validated">
+                    <img src="assets/img/founder.jpeg" alt="Founder picture" />
+                    <div class="room-detail__founder__image__validated">
                         <img src="assets/Ellipse 4.png" alt="Checkmark" />
                     </div>
                 </div>
                 <h2 class="room-detail__founder__name">Sevillano P. Eva</h2>
-                <p class="room-detail__founder__rank">Founder, Qux Co.</p>
+                <h4 class="room-detail__founder__rank">FOUNDER QUX CO.</h4>
                 <h4 class="room-detail__founder__description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore.</h4>
             </div>
 
             <div class="room-detail__cancellation">
                 <h2 class="room-detail__cancellation__title">Cancellation</h2>
-                <p class="room-detail__cancellation__description">
+                <h4 class="room-detail__cancellation__description">
                     Phasellus volutpat neque a tellus venenatis, a euismod augue facilisis. Fusce ut metus mattis, consequat metus nec, luctus lectus. Pellentesque orci quis hendrerit sed eu dolor. Cancel up to 14 days to get a full refund.
-                </p>
+                </h4>
             </div>
+
+        </section>
+
 
             <section class="room__list">
                 <div class="room__list__container">

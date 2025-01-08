@@ -1,0 +1,59 @@
+.booking-form {
+    padding: 1.5rem 2rem;
+    background-color: $black; 
+    margin-bottom: 1rem;
+
+    &__title {
+        margin-bottom: 20px;
+        @include fontStyle($roboto, 0.9rem, 500, $white); 
+    }
+
+    &__label {
+        display: block;
+        margin-bottom: 0.8rem;
+    }
+
+    &__input-container {
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid $beige; 
+        margin-bottom: 20px;
+        padding: 5px 0;
+    }
+
+    &__calendar-icon {
+        display: inline-block;
+        width: 17px;
+        height: 17px;
+        margin-right: 10px;
+        background-size: contain;
+        z-index: 10;
+    }
+
+    &__input {
+        flex: 1;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        @include fontStyle($roboto, 0.9rem, normal, $darkgray); 
+
+        &::-webkit-calendar-picker-indicator {
+            display: none;
+            -webkit-appearance: none;
+        }
+    
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &__button {
+        @include defaultButton($beige, $white); 
+    }
+
+    @media only screen and (min-width: 1000px) {
+        .nav__menu-mobile {
+        display: none;
+    }
+    }
+}

@@ -1,0 +1,117 @@
+.room-detail {
+
+    padding: 2rem;
+
+    p {
+        @include fontStyle($roboto, .8rem, normal, $darkgray); 
+        line-height: 1.6; 
+        margin-bottom: 1.5rem; 
+        text-align: justify;
+    }
+
+    &__amenities {
+
+        &__title {
+        @include fontStyle($archivo, 1.5rem, bold, $blacktwo);
+        margin-bottom: .5rem;
+    }
+
+    &__hr {
+        border-top: 1px solid $grayone;
+        margin: .5rem 0;
+    }
+
+    &__ul {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        list-style: none;
+        padding: 0;
+        margin-top: 1.5rem;
+
+        li {
+            display: flex;
+            align-items: center;
+            gap: .5rem;
+
+        img {
+            width: 20px;
+            height: 20px;
+        }
+
+        @include fontStyle($roboto, 1rem, normal, $darkgray);
+        }
+    }
+}
+
+    &__founder {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 3rem;
+    
+        &__image {
+            position: relative;
+            width: 100px;
+            height: 100px;
+            margin-bottom: 2rem;
+
+        img {
+            width: 120%;
+            height: 120%;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid $beige;
+        }
+
+        &__validated {
+            position: absolute;
+            bottom: 3.9rem;
+            left: 4.9rem;
+            padding: .3rem;
+
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+
+    &__name {
+        @include fontStyle($oldtt, 1.7rem, 400, $black);
+        margin: 0.5rem 0;
+    }
+
+    &__rank {
+        @include fontStyle($oswald, .9rem, normal, $beige);
+        margin: 0.3rem 0;
+    }
+
+    &__description {
+        @include fontStyle($roboto, 1rem, normal, $darkgray);
+        margin-top: 0.5rem;
+        line-height: 1.5;
+        max-width: 300px;
+    }
+    }
+
+    &__cancellation {
+        margin-top: 2rem;
+    
+        &__title {
+            @include fontStyle($archivo, 1.5rem, bold, $blacktwo);
+            margin-bottom: 1rem;
+            border-bottom: 1px solid $grayone;
+            padding-bottom: 0.5rem;
+            width: 100%; 
+            
+        }
+    
+        &__description {
+            @include fontStyle($roboto, 1rem, normal, $darkgray);
+            line-height: 1.5;
+            margin-top: 1rem;
+        }
+    }
+}

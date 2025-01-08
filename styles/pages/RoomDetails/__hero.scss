@@ -1,0 +1,46 @@
+.details__hero {
+    background-color: $blacktwo;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+
+
+    &__p {
+    @include fontStyle($oswald, .7rem, 300, $white);
+    letter-spacing: 2px;
+    margin: 0;
+    text-align: left;
+
+    }
+
+    &__h1 {
+        @include fontStyle($oldtt, 3rem, 400, $white);
+        margin: .5rem 0;
+        text-align: left;
+
+    }
+
+    &__navegation {
+            background-color: $white;
+            display: inline-flex; 
+            padding: 0.7rem 1.5rem;  
+
+        }
+
+
+    &__navegation__return {
+        @include fontStyle($archivo, 0.875rem, 400, $black);
+        text-decoration: none;
+        margin-right: .5rem;
+    }
+
+    span {
+        @include fontStyle($archivo, 0.875rem, 700, $beige);
+    }
+
+    #verticalbar {
+        @include fontStyle ($archivo, 0.875rem, 400, $black);
+        margin: 0 .5rem;
+    }
+    
+}
