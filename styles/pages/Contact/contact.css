@@ -49,7 +49,7 @@
 }
 
 .contact {
-  margin: 0 auto;
+  margin: 2rem 0;
   padding: 20px;
   background-color: rgb(255, 255, 255);
 }
@@ -60,7 +60,13 @@
   position: relative;
 }
 .contact__hotel__icon, .contact__phone__icon, .contact__email__icon {
-  margin-right: 2rem;
+  margin-right: 3rem !important;
+  width: 30px;
+  height: auto;
+}
+.contact__hotel__info, .contact__phone__info, .contact__email__info {
+  position: relative;
+  z-index: 2;
 }
 .contact__hotel__info__text, .contact__phone__info__text, .contact__email__info__text {
   font-family: "Old Standard TT", "offline-old_standard_ttregular", "Roboto", sans-serif, arial;
@@ -81,13 +87,78 @@
   position: absolute;
   font-size: 100px;
   color: rgb(248, 248, 248);
-  z-index: -1;
-  top: -20px;
+  z-index: 1;
+  top: 0;
   right: 20px;
+  opacity: 0.1;
 }
 .contact__us {
   background-color: rgb(248, 248, 248);
   height: 100%;
   width: 100%;
   margin-top: 20px;
+}
+
+.form__container {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+}
+.form__container__group {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  background-color: rgb(248, 248, 248);
+  padding: 10px 10px 10px 40px;
+  margin-bottom: 15px;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+}
+.form__container__group img {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+}
+.form__container__group input,
+.form__container__group textarea {
+  border: none;
+  outline: none;
+  width: 100%;
+  background: transparent;
+  font-family: "Archivo", "archivo-offline", "Roboto", sans-serif, arial;
+  font-size: 14px;
+  color: rgb(119, 119, 119);
+}
+.form__container__group input::-moz-placeholder, .form__container__group textarea::-moz-placeholder {
+  color: #aaaaaa;
+}
+.form__container__group input::placeholder,
+.form__container__group textarea::placeholder {
+  color: #aaaaaa;
+}
+.form__container__group textarea {
+  resize: none;
+  height: 100px;
+}
+.form__container__button {
+  background-color: rgb(190, 173, 142);
+  margin: 1.5rem 0;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding: 1rem 1.2rem;
+  border: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  width: 80%;
+  text-align: center;
+}
+.form__container__button:hoover {
+  background-color: #dad0bf;
 }/*# sourceMappingURL=contact.css.map */

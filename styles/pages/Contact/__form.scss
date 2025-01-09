@@ -1,5 +1,5 @@
 .contact {
-    margin: 0 auto;
+    margin: 2rem 0;
     padding: 20px;
     background-color: $white;
 
@@ -10,12 +10,14 @@
         position: relative;
 
         &__icon {
-            margin-right: 2rem;
+            margin-right: 3rem !important;
+            width: 30px;
+            height: auto;
         }
 
-
-
         &__info {
+            position: relative;
+            z-index: 2;
 
             &__text {
                 @include fontStyle($oldtt, 24px, 200);
@@ -33,9 +35,10 @@
             position: absolute;
             font-size: 100px;
             color: $gray;
-            z-index: -1;
-            top: -20px;
+            z-index: 1;
+            top: 0;
             right: 20px;
+            opacity: 0.1;
         }
     }
 
@@ -46,3 +49,57 @@
         margin-top: 20px;
     }
 }
+
+.form__container {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: $white;
+
+    &__group{
+
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            background-color: $gray;
+            padding: 10px 10px 10px 40px; 
+            margin-bottom: 15px;
+            border: 1px solid lighten($gray, 10%);
+            display: flex;
+            align-items: center;
+
+            img {
+                position: absolute;
+                left: 10px; 
+                top: 50%;
+                transform: translateY(-50%);
+                width: 15px;
+                height: 15px;
+            }
+
+            input,
+            textarea {
+                border: none;
+                outline: none;
+                width: 100%;
+                background: transparent;
+                font-family: $archivo;
+                font-size: 14px;
+                color: $darkgray;
+
+                &::placeholder {
+                    color: lighten($darkgray, 20%);
+                }
+            }
+
+            textarea {
+                resize: none;
+                height: 100px;
+            }
+        }
+
+        &__button {
+            @include defaultButton($beige, $white);
+            width: 80%;
+            text-align: center;            
+        }
+    }
