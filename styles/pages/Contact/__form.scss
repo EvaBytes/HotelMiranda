@@ -1,0 +1,48 @@
+.contact {
+    margin: 0 auto;
+    padding: 20px;
+    background-color: $white;
+
+    &__hotel, &__phone, &__email {
+        margin-bottom: 40px;
+        display: flex;
+        align-items: flex-start;
+        position: relative;
+
+        &__icon {
+            margin-right: 2rem;
+        }
+
+
+
+        &__info {
+
+            &__text {
+                @include fontStyle($oldtt, 24px, 200);
+                margin: 0;
+            }
+
+            &__address, &__number, &__add {
+                @include fontStyle($roboto, 16px, 100);
+                margin: 5px 0 0;
+                line-height: 1.5;
+            }
+        }
+
+        img:last-child {
+            position: absolute;
+            font-size: 100px;
+            color: $gray;
+            z-index: -1;
+            top: -20px;
+            right: 20px;
+        }
+    }
+
+    &__us {
+        background-color: $gray;
+        height: 100%;
+        width: 100%;
+        margin-top: 20px;
+    }
+}
