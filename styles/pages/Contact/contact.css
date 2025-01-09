@@ -121,7 +121,9 @@
   align-items: center;
 }
 .form__container__group__pencil {
-  top: 0;
+  position: absolute;
+  left: 10px;
+  top: 15%;
   transform: translateY(-50%);
   width: 15px;
   height: 15px;

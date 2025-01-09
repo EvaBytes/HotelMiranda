@@ -1,9 +1,9 @@
-@charset "UTF-8";
 .hero {
   background-color: rgb(51, 51, 51);
-  padding: 2rem;
-  text-align: center;
+  padding: 2rem 1rem;
+  color: rgb(255, 255, 255);
   position: relative;
+  padding-bottom: 6rem;
 }
 .hero__p {
   font-family: "Oswald", "offline-oswald", "Archivo", sans-serif, arial;
@@ -24,8 +24,8 @@
 }
 .hero__navegation {
   background-color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: flex-start;
+  display: inline-flex;
+  padding: 0.7rem 1.5rem;
   right: 1.25rem;
   bottom: -0.1rem;
   position: absolute;
@@ -52,12 +52,109 @@
   margin: 0 0.5rem;
 }
 
-/* Asegúrate de que el contenedor se extienda hasta el borde */
-.hero__navegation {
-  height: 100%; /* Estira el contenedor para ocupar todo el espacio disponible */
-  box-sizing: border-box; /* Incluye el padding en la altura total */
+.offer {
+  margin: 0 1rem;
 }
-
-.hero__navegation__return {
-  align-self: flex-end; /* Posiciona el elemento en el borde inferior */
+.offer__rooms {
+  padding: 2rem;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  margin: 2rem 0;
+}
+.offer__rooms__img {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 2rem;
+}
+.offer__rooms__pricing {
+  position: absolute;
+  top: 11.25rem;
+  right: 2.5rem;
+  text-align: right;
+}
+.offer__rooms__pricing__old {
+  font-family: "Roboto", "offline-roboto", "Archivo", sans-serif, arial;
+  font-size: 1.2rem;
+  font-weight: normal;
+  color: rgb(190, 173, 142);
+  text-decoration: line-through;
+  display: block;
+}
+.offer__rooms__pricing__new {
+  font-family: "Roboto", "offline-roboto", "Archivo", sans-serif, arial;
+  font-size: 1.45rem;
+  font-weight: bold;
+  color: rgb(34, 34, 34);
+  color: rgb(222, 87, 119);
+  margin-top: 0.5rem;
+}
+.offer__rooms__amenities {
+  margin-bottom: 2rem;
+}
+.offer__rooms__amenities__name {
+  font-family: "Oswald", "offline-oswald", "Archivo", sans-serif, arial;
+  font-size: 0.8rem;
+  font-weight: bold;
+  color: rgb(119, 119, 119);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+.offer__rooms__amenities__title {
+  font-family: "Old Standard TT", "offline-old_standard_ttregular", "Roboto", sans-serif, arial;
+  font-size: 2rem;
+  font-weight: 200;
+  color: rgb(34, 34, 34);
+  margin-bottom: 1rem;
+}
+.offer__rooms__amenities__description {
+  font-family: "Roboto", "offline-roboto", "Archivo", sans-serif, arial;
+  font-size: 0.95rem;
+  font-weight: normal;
+  color: rgb(119, 119, 119);
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+.offer__rooms__amenities__hr {
+  margin: 2rem 0;
+}
+.offer__rooms__amenities__hr__ul {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+.offer__rooms__amenities__hr__ul li {
+  display: flex;
+  align-items: center;
+  font-family: "Roboto", "offline-roboto", "Archivo", sans-serif, arial;
+  font-size: 0.9rem;
+  font-weight: normal;
+  color: rgb(34, 34, 34);
+}
+.offer__rooms__amenities__hr__ul li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 1rem;
+}
+.offer__rooms__amenities__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(190, 173, 142);
+  margin: 1.5rem 0;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding: 1rem 1.2rem;
+  border: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.offer__rooms__amenities__button:hoover {
+  background-color: #dad0bf;
 }/*# sourceMappingURL=offers.css.map */
