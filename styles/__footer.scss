@@ -40,17 +40,22 @@
         display: flex;
         justify-content: space-between;
         width: 240px;
-        margin-bottom: 32px;
+        margin-bottom: 3rem;
 
         &__container-icons {
-            width: 2rem;
-            height: 2rem;
+            width: 1.5rem;
+            height: 1.5rem;
             text-align: center;
+            transition: all 0.3s ease-in-out;
+            background-color: transparent; 
 
-            &__twitter {
-                background-color: rgba(190, 173, 142, 1);
-                padding: 0.5rem;
+            &:hover {
+                background-color: rgba(190, 173, 142, 0.2); 
+                padding: 2rem;
+                box-shadow: 0 0.5rem 1rem rgba(243, 213, 157, 0.758); 
+                border: 2px solid rgba(190, 173, 142, 1); 
             }
+
         }
     }
 
@@ -185,20 +190,112 @@
 
 @media only screen and (min-width: 1000px) {
     .footer {
-        &__background {
-            display: flex;
-            padding: 0 5%;
-            justify-content: space-between;
+        display: grid;
+        grid-template-columns: 35% 30% 35%; 
+        grid-template-rows: 1fr; 
+    
+        &__info {
+            margin-left: 25%;
+            min-width: 30ch;
+            margin-top: 2.75rem;
+            padding-top: 1.5rem;
+    
+    
+            &__description {
+                margin-left: 1.76rem;
+            }
         }
-
-        &__content {
-            display: flex;
-            justify-content: space-between;
-            gap: 30px;
+    
+        &__description {
+            margin-right: 30%;
+            min-width: 30ch;
         }
+    
+        &__social {
+            min-width: 30ch;
+    
+            &__container-icons {
+                display: inline-block;
+                margin-right: 10px;
+                transition: all 0.3s ease-in-out;
+    
+            }
+        }
+    
+        &__services {
+            margin-top: 4.25rem;
+            margin-left: 1rem;
 
-        .hotel-info {
-            width: 20%;
+    
+            &-text {
+                font-size: 1.5rem;
+                font-weight: light;
+                margin-top: 0;
+                margin-bottom: 3rem;
+            }
+    
+            &-text__container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1rem;
+                font-size: 1rem;
+            }
+        }
+    
+        &__contact {
+            margin-top: 4.25rem;
+            margin-right: 25%;
+            min-width: 30ch;
+    
+            &__title {
+                font-size: 1.5rem;
+                font-weight: light;
+                margin-bottom: 3rem;
+            }
+    
+            &__section {
+                display: flex;
+                align-items: center;
+    
+                &__icon {
+                    margin-right: 0.5rem;
+                }
+    
+                &__text-container {
+                    display: flex;
+                    flex-direction: column;
+    
+                    &__name {
+                        font-weight: bold;
+                    }
+    
+                    &__value {
+                        font-size: 0.9rem;
+                        color: gray;
+                    }
+                }
+            }
+        }
+    
+        &__legal__info {
+            grid-row-start: 4;
+            grid-row-end: 5;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 1rem;
+            padding-left: 10%;
+            padding-right: 10%;
+            font-size: 0.9rem;
+            color: gray;
+    
+            &__terms {
+                font-size: 0.8rem;
+            }
         }
     }
+    
 }
