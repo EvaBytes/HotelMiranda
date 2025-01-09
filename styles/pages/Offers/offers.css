@@ -1,1 +1,63 @@
-/*# sourceMappingURL=offers.css.map */
+@charset "UTF-8";
+.hero {
+  background-color: rgb(51, 51, 51);
+  padding: 2rem;
+  text-align: center;
+  position: relative;
+}
+.hero__p {
+  font-family: "Oswald", "offline-oswald", "Archivo", sans-serif, arial;
+  font-size: 0.7rem;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+  letter-spacing: 2px;
+  margin: 0;
+  text-align: left;
+}
+.hero__h1 {
+  font-family: "Old Standard TT", "offline-old_standard_ttregular", "Roboto", sans-serif, arial;
+  font-size: 3rem;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  margin: 0.5rem 0;
+  text-align: left;
+}
+.hero__navegation {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: flex-start;
+  right: 1.25rem;
+  bottom: -0.1rem;
+  position: absolute;
+}
+.hero__navegation__return {
+  font-family: "Archivo", "archivo-offline", "Roboto", sans-serif, arial;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgb(34, 34, 34);
+  text-decoration: none;
+  margin-right: 0.5rem;
+}
+.hero span {
+  font-family: "Archivo", "archivo-offline", "Roboto", sans-serif, arial;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: rgb(190, 173, 142);
+}
+.hero #verticalbar {
+  font-family: "Archivo", "archivo-offline", "Roboto", sans-serif, arial;
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: rgb(34, 34, 34);
+  margin: 0 0.5rem;
+}
+
+/* Asegúrate de que el contenedor se extienda hasta el borde */
+.hero__navegation {
+  height: 100%; /* Estira el contenedor para ocupar todo el espacio disponible */
+  box-sizing: border-box; /* Incluye el padding en la altura total */
+}
+
+.hero__navegation__return {
+  align-self: flex-end; /* Posiciona el elemento en el borde inferior */
+}/*# sourceMappingURL=offers.css.map */

@@ -1,8 +1,9 @@
 .hero {
     background-color: $blacktwo;
-    padding: 2rem;
-    text-align: center;
+    padding: 2rem 1rem;
+    color: $white;
     position: relative;
+    padding-bottom: 6rem;
 
 
     &__p {
@@ -23,7 +24,10 @@
     &__navegation {
             background-color: $white;
             display: inline-flex; 
-            padding: 0.7rem 1.5rem;  
+            padding: 0.7rem 1.5rem;
+            right: 1.25rem;
+            bottom: -.1rem;
+            position: absolute; 
 
         }
 

@@ -1,0 +1,53 @@
+.hero {
+    background-color: $blacktwo;
+    padding: 2rem;
+    text-align: center;
+    position: relative;
+
+    &__p {
+        @include fontStyle($oswald, .7rem, 300, $white);
+        letter-spacing: 2px;
+        margin: 0;
+        text-align: left;
+    }
+
+    &__h1 {
+        @include fontStyle($oldtt, 3rem, 400, $white);
+        margin: .5rem 0;
+        text-align: left;
+    }
+
+    &__navegation {
+        background-color: $white;
+        display: flex;
+        justify-content: flex-start;
+        right: 1.25rem;
+        bottom: -0.1rem;
+        position: absolute; 
+    }
+
+    &__navegation__return {
+        @include fontStyle($archivo, 0.875rem, 400, $black);
+        text-decoration: none;
+        margin-right: 0.5rem;
+    }
+
+    span {
+        @include fontStyle($archivo, 0.875rem, 700, $beige);
+    }
+
+    #verticalbar {
+        @include fontStyle($archivo, 0.875rem, 400, $black);
+        margin: 0 0.5rem;
+    }
+}
+
+/* Asegúrate de que el contenedor se extienda hasta el borde */
+.hero__navegation {
+    height: 100%; /* Estira el contenedor para ocupar todo el espacio disponible */
+    box-sizing: border-box; /* Incluye el padding en la altura total */
+}
+
+.hero__navegation__return {
+    align-self: flex-end; /* Posiciona el elemento en el borde inferior */
+}
