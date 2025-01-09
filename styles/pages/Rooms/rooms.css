@@ -49,13 +49,14 @@
 }
 
 .room__list {
-  padding: 50px 0;
+  padding: 3rem 0;
   background-color: rgb(248, 248, 248);
 }
 .room__list__container {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin: 0 2rem;
 }
 .room__list__container__img {
   margin: 1rem 1rem;
@@ -64,40 +65,50 @@
   background-color: rgb(249, 249, 249);
 }
 .room__list__container__img img {
-  width: 90%;
-  height: 60%;
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 .room__list__content {
-  width: 100%;
-  padding: 20px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 1.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .room__list__content__icons {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  margin-bottom: 15px;
+  gap: 1rem;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  padding: 1rem 1.8rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  margin-top: -3rem;
+  z-index: 999;
 }
 .room__list__content__icons img {
-  width: 30px;
-  height: 30px;
-  margin-right: 10px;
+  width: 16px;
+  height: 16px;
 }
 .room__list .room__title {
+  font-family: "Old Standard TT", "offline-old_standard_ttregular", "Roboto", sans-serif, arial;
   font-size: 28px;
   font-weight: bold;
   color: rgb(34, 34, 34);
-  margin-bottom: 10px;
+  margin-bottom: 0.8rem;
 }
 .room__list .room__title a {
   text-decoration: none;
   color: rgb(34, 34, 34);
+  transition: color 0.3s;
+}
+.room__list .room__title a:hover {
+  color: rgb(119, 119, 119);
 }
 .room__list .room__description {
+  font-family: "Roboto", "offline-roboto", "Archivo", sans-serif, arial;
+  font-size: 1rem;
+  font-weight: normal;
   color: rgb(119, 119, 119);
   margin-bottom: 15px;
 }
@@ -107,9 +118,35 @@
   font-weight: bold;
 }
 .room__list .room__details span {
+  font-family: "Roboto", "offline-roboto", "Archivo", sans-serif, arial;
+  font-size: 1rem;
+  font-weight: bold;
   color: rgb(190, 173, 142);
 }
 .room__list .room__details a {
-  text-decoration: none;
+  font-family: "Roboto", "offline-roboto", "Archivo", sans-serif, arial;
+  font-size: 1rem;
+  font-weight: bold;
   color: rgb(190, 173, 142);
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.room__list .room__details a:hover {
+  color: rgb(189, 172, 141);
+}
+.room__list .room__details button {
+  background-color: rgb(190, 173, 142);
+  margin: 1.5rem 0;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  padding: 1rem 1.2rem;
+  border: none;
+  color: rgb(255, 255, 255);
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+.room__list .room__details button:hoover {
+  background-color: #dad0bf;
 }/*# sourceMappingURL=rooms.css.map */
