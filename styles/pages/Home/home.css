@@ -254,4 +254,36 @@
   font-size: 2rem;
   font-weight: bold;
   color: rgb(34, 34, 34);
+}
+
+.stats {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  background-color: rgb(34, 34, 34);
+  padding: 2rem;
+  font-family: "Archivo", "archivo-offline", "Roboto", sans-serif, arial;
+}
+.stats__card__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
+.stats__card__item__icon {
+  margin-bottom: 1rem;
+  width: 60px;
+  height: 60px;
+}
+.stats__card__item__number {
+  font-family: "Roboto", "offline-roboto", "Archivo", sans-serif, arial;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+.stats__card__item__text {
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: rgb(119, 119, 119);
 }/*# sourceMappingURL=home.css.map */
