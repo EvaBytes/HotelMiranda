@@ -35,15 +35,14 @@
       justify-content: center;
       gap: 1.2rem;
       background-color: $white;
-      padding: 0.5rem 1.5rem; 
+      padding: 0.5rem 1.8rem; 
       box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
       margin-top: -2.2rem; 
-      margin-right: 1rem; 
       z-index: 999;
 
       img {
-        width: 10px;
-        height: 10px;
+        width: 11px;
+        height: 11px;
       }
     }
   }
@@ -99,6 +98,29 @@
       button {
         @include defaultButton($beige, $white);
       }
+    }
+  }
+}
+
+.pagination {
+  &__button {
+    background: none;
+    font-size: medium;
+    font-weight: 800;
+    border: none;
+    padding: .5rem .9rem;
+    margin: 0 .3rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
+    &--active {
+      background-color: $beige;
+      color: $white;
+    }
+
+    &:hover {
+      background-color: $beigetwo;
+      color: $white;
     }
   }
 }

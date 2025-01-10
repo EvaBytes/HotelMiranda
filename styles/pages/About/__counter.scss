@@ -1,0 +1,93 @@
+.counter {
+  background-color: $white;
+  padding: 2rem;
+  margin: 2rem 0;
+
+  &__title {
+    text-align: left;
+    margin-bottom: 2rem;
+
+    &-subtitle {
+      font-family: 'Archivo', sans-serif;
+      font-size: 0.7rem;
+      letter-spacing: 2px;
+      font-weight: 400;
+      color: $darkgray;
+      margin-bottom: 1rem;
+    }
+
+    &-heading {
+      font-family: $oldtt;
+      font-size: 3rem;
+      font-weight: 400;
+      letter-spacing: 2px;
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
+
+    &-icon {
+      margin-left: 1.3rem;
+      width: 50px;
+      height: 50px;
+    }
+
+    &-content {
+      display: flex;
+      flex-direction: column;
+      margin-left: 1rem;
+
+      &-number {
+        font-size: 4.5rem;
+        font-weight: 100;
+        color: $black;
+      }
+
+      &-text {
+        font-family: $roboto;
+        font-size: 0.9rem;
+        color: $darkgray;
+      }
+    }
+
+    &-arrow {
+      margin-right: .5rem;
+      font-size: 1.5rem;
+      color: $grayone;
+    }
+
+    &__img{
+      margin-top: 2rem;
+      width: 100%;
+
+    }
+  }
+}
+
+@media (min-width: 1000px) {
+  .counter {
+    padding: 4rem;
+
+    &__title {
+      &-heading {
+        font-size: 3rem;
+      }
+    }
+
+    &__item {
+      &-content {
+        &-number {
+          font-size: 2.5rem;
+        }
+
+        &-text {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}

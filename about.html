@@ -18,17 +18,20 @@
     <header class="header">
         <div class="container">
             <nav class="nav">
-                <img class="nav__hamburger" src="assets/HamburgerMenu.png" alt="Hamburger Menu"/>
+                <img src="assets/HotelMirandaIcon.png" class="nav__logo" alt="Hotel Miranda"/>
 
                 <section class="nav__header-mobile">
-                    <img class="nav__hamburger" id= "hamburger" src="assets/HamburgerMenu.png" alt="Hamburger Menu"/>
+                    <a class="nav__hamburger" id="hamburger">
+                        <img src="assets/HamburgerMenu.png" alt="Hamburger Menu"/>
+                    </a>
 
                     <ul class="nav__menu-mobile" id="mobileMenu">
                         <li><a href="index.html">About Us</a></li>
                         <li><a href="rooms.html">Rooms</a></li>
-                        <li ><a href="about.html">Offers</a></li>
+                        <li><a href="about.html">Offers</a></li>
                         <li><a href="contact.html">Contact</a></li>
                     </ul>
+                    
 
                 </section>
 
@@ -43,8 +46,6 @@
                         <li class="nav__item"><a href="about.html">Offers</a></li>
                         <li class="nav__item"><a href="contact.html">Contact</a></li>
                     </ul>
-
-
             </nav>
         </div>
     </header>
@@ -61,6 +62,107 @@
                     <span>About</span>
                 </div>
             </section>
+
+            <section class="about-section">
+                <div class="about-section__video">
+                    <iframe
+                        class="about-section__video-iframe"
+                        width="560"
+                        height="315"
+                        src="https://www.youtube.com/embed/Bu3Doe45lcU?start=25&end=75&autoplay=0"
+                        title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                    </div>
+                    
+                    <h2 class="about-section__text">Hello. Our hotel has been present for over 20 years.We make the best for all our customers.</h2>
+
+                    <div class="about-section__features">
+                        <div class="about-section__f">
+                            <img class="about-section__features__f__img" src="assets/Breakfast.png" alt="Breakfast Icon" />
+                            <p class="about-section__features__f__text">BREAKFAST</p>
+                        </div>
+                        <div class="about-section__feature">
+                            <img class="about-section__features__f__img" src="assets/PlaneBeige.png" alt="Airport Pickup Icon" />
+                            <p class="about-section__features__f__text">AIRPORT PICKUP</p>
+                        </div>
+                        <div class="about-section__feature">
+                            <img class="about-section__features__f__img" src="assets/Location.png" alt="City Guide Icon" />
+                            <p class="about-section__features__f__text">CITY GUIDE</p>
+                        </div>
+                        <div class="about-section__feature">
+                            <img class="about-section__features__f__img"  src="assets/LuxuryRooms.png" alt="Luxury Room Icon" />
+                            <p class="about-section__features__f__text">LUXURY ROOM</p>
+                        </div>
+                    </div>
+
+                    <div class="about-section__card">
+                        <div>
+                            <img class="about-section__card-image" src="assets/img/Restaurant3.jpg" alt="Restaurant"/>
+                        </div>
+                        <div class="about-section__card-content">
+                            <h3 class="about-section__card-content-subtitle">RESTAURANT</h3>
+                            <h2 class="about-section__card-content-title">Get Restaurant Facilities & Many Other More</h2>
+                            <p class="about-section__card-content-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+                            <button class="about-section__card-content-button">TAKE A TOUR</button>
+                        </div>
+                    </div>
+            </section>
+
+            <section class="section">
+                    <div class="section__title">
+                        <p class="section__title-subtitle">FACILITIES</p>
+                        <h1 class="section__title-heading">Core Features</h1>
+                    </div>
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+
+                            <div class="swiper-slide">
+                                <img src="assets/Rating.png" alt="High Rating Icon">
+                                <h3 class="swiper-slide__heading">Have High Rating</h3>
+                                <p class="swiper-slide__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+                            </div>
+
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="counter">
+                <div class="counter__title">
+                    <p class="counter__title-subtitle">COUNTER</p>
+                    <h1 class="counter__title-heading">Some Fun Facts</h1>
+                </div>
+                <div class="counter__item">
+                    <img class="counter__item-icon" src="assets/Happy.png" alt="Happy Users Icon">
+                <div class="counter__item-content">
+                    <span class="counter__item-content-number">8000</span>
+                    <span class="counter__item-content-text">Happy Users</span>
+                </div>
+                  <span class="counter__item-arrow">→</span>
+                </div>
+                <div class="counter__item">
+                    <img class="counter__item-icon" src="assets/Likes.png" alt="Reviews Icon">
+                <div class="counter__item-content">
+                    <span class="counter__item-content-number">10M</span>
+                    <span class="counter__item-content-text">Reviews & Appreciate</span>
+                </div>
+                  <span class="counter__item-arrow">→</span>
+                </div>
+                <div class="counter__item">
+                  <img class="counter__item-icon" src="assets/WWLocations.png" alt="Country Coverage Icon">
+                  <div class="counter__item-content">
+                    <span class="counter__item-content-number">100</span>
+                    <span class="counter__item-content-text">Country Coverage</span>
+                  </div>
+                  <span class="counter__item-arrow">→</span>
+                </div>
+
+                <img class="counter__item__img" src="assets/img/Recepcionist.jpg" alt="Happy Guest"/>
+              </section>
+
 
         </main>
 
@@ -148,6 +250,8 @@
         </footer>
     
             <script src="scripts/menu.js"></script>
+            <script src="scripts/swiper.js" type="module"></script>
+
     
     </body>
     </html>
