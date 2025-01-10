@@ -3,9 +3,10 @@
     background-color: $white;
 
     &__title {
-        @include fontStyle($oldtt, 2rem, bold, $black);
-        text-align: center;
+        @include fontStyle($oldtt, 2rem, 100, $black);
+        text-align: left;
         margin-bottom: 1.5rem;
+        letter-spacing: 2px;
     }
 
     &__container {

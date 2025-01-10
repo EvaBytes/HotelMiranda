@@ -100,7 +100,8 @@
         margin-top: 2rem;
     
         &__title {
-            @include fontStyle($archivo, 1.5rem, bold, $blacktwo);
+            @include fontStyle($oldtt, 1.5rem, 100, $blacktwo);
+            letter-spacing: 2px;
             margin-bottom: 1rem;
             border-bottom: 1px solid $grayone;
             padding-bottom: 0.5rem;

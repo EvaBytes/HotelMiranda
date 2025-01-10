@@ -1,59 +1,102 @@
-.booking-form {
-    padding: 1.5rem 2rem;
-    background-color: $black; 
-    margin-bottom: 1rem;
+.double__room {
+  flex-direction: column;
+  text-align: left;
+  margin-top: 1rem;
 
+  &__detail {
     &__title {
-        margin-bottom: 20px;
-        @include fontStyle($roboto, 0.9rem, 500, $white); 
+      @include fontStyle($archivo, 0.7rem, 500, $darkgray);
+      margin-bottom: 0.5rem;
+      letter-spacing: 2px;
     }
 
-    &__label {
-        display: block;
-        margin-bottom: 0.8rem;
+    &__caption {
+      @include fontStyle($oldtt, 2rem, 400, $blacktwo);
+      letter-spacing: 2px;
+      margin-bottom: 0.5rem;
     }
+
+    &__price {
+      @include fontStyle($archivo, 1.7rem, 500, $beige);
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  &-detail__image {
+    margin-top: 1rem;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.booking-form {
+  flex-direction: column;
+  background-color: $white;
+  padding: 2rem 2rem;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+
+  &__title {
+    @include fontStyle($archivo, 1rem, bold, $blackthree);
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  &__subtitle {
+    @include fontStyle($archivo, .85rem, bold, $black);
+    margin-bottom: 0.5rem;
+    display: block;
+  }
+
+  &__label {
+    width: 100%;
+    margin-bottom: 1.5rem;
 
     &__input-container {
-        display: flex;
-        align-items: center;
-        border-bottom: 2px solid $beige; 
-        margin-bottom: 20px;
-        padding: 5px 0;
-    }
+      position: relative;
+      display: flex;
+      align-items: center;
+      background-color: $graytwo;
+      padding: 0.8rem 1rem;
+      border-radius: 5px;
 
-    &__calendar-icon {
-        display: inline-block;
-        width: 17px;
-        height: 17px;
-        margin-right: 10px;
-        background-size: contain;
-        z-index: 10;
-    }
+      .booking-form__calendar-icon {
+        width: 20px;
+        height: 20px;
+        margin-right: 0.5rem;
+        cursor: pointer; 
+      }
 
-    &__input {
-        flex: 1;
-        padding: 0;
+      .booking-form__input {
+        @include fontStyle($archivo, 1rem, 400, $darkgray);
         border: none;
-        background-color: transparent;
-        @include fontStyle($roboto, 0.9rem, normal, $darkgray); 
-
+        background: transparent;
+        cursor: pointer; 
+        flex: 1;
+      
         &::-webkit-calendar-picker-indicator {
-            display: none;
-            -webkit-appearance: none;
+          display: none; 
+          -webkit-appearance: none;
         }
-    
-        &:focus {
-            outline: none;
-        }
+      }
+      
     }
+  }
 
-    &__button {
-        @include defaultButton($beige, $white); 
-    }
+  &__button {
+    @include defaultButton($beige, $white);
+    width: 100%;
+    padding: 1rem;
+    font-weight: 400;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
 
-    @media only screen and (min-width: 1000px) {
-        .nav__menu-mobile {
-        display: none;
+    &:hover {
+      background-color: lighten($beige, 10%);
     }
-    }
+  }
 }
+

@@ -54,7 +54,7 @@
 
         <section class="details__hero">
             <p class="details__hero__p">THE ULTIMATE LUXURY</p>
-            <h1 class="details__hero__h1">Ultimate Room</h1>
+            <h1 class="details__hero__h1">Ultimate<br>Room</h1>
             
             <div class="details__hero__navegation">
                 <a class="details__hero__navegation__return">Home</a>
@@ -63,37 +63,35 @@
             </div>
         </section>
 
-        <section class="room-detail">
-            <div class="room-detail__header">
-                <p class="room-detail__header__title">DOUBLE BED</p>
-                <h3 class="room-detail__caption">Luxury Double Bed</h3>
-                <p class="room-detail__price">$345/night</p>
-            </div>
-
-            <div class="room-detail__image">
-                <img src="assets/Rectangle 14.png" alt="Room Image" />
-            </div>
-        </section>
-
         <section class="booking-form">
-            <h2 class="booking-form__title">Check In</h2>
-            <label class="booking-form__label" for="arrival-date">
-                <div class="booking-form__input-container">
-                    <img src="assets/calendar1.png" class="booking-form__calendar-icon" alt="calendar"/>
-                    <input type="date" class="booking-form__input" value="2025-03-24">
-                </div>
-            </label>
-        
-            <h2 class="booking-form__title">Check Out</h2>
-            <label class="booking-form__label" for="departure-date">
-                <div class="booking-form__input-container">
-                    <img src="assets/calendar1.png" class="booking-form__calendar-icon" alt="calendar"/>
-                    <input type="date" class="booking-form__input" value="2025-03-30">
-                </div>
-            </label>
-        
-            <button class="booking-form__button">CHECK AVAILABILITY</button>
+            <div class="double__room">
+                <p class="double__room__detail__title">DOUBLE BED</p>
+                <h3 class="double__room__detail__caption">Luxury Double Bed</h3>
+                <p class="double__room__detail__price">$345/Night</p>
+            </div>
+            <div class="double__room-detail__image">
+                <img src="assets/img/LuxuryRoom.jpg" alt="Luxury Double Bed Image">
+            </div>
+    
+            <h2 class="booking-form__title">Check Availability</h2>
 
+            <label class="booking-form__label" for="check-in">
+                <span class="booking-form__subtitle">Check In</span>
+                <div class="booking-form__label__input-container">
+                    <img src="assets/calendarGREY.png" class="booking-form__calendar-icon" alt="Calendar">
+                    <input type="date" id="check-in" class="booking-form__input" value="2025-03-14">
+                </div>
+            </label>
+            
+            <label class="booking-form__label" for="check-out">
+                <span class="booking-form__subtitle">Check Out</span>
+                <div class="booking-form__label__input-container">
+                    <img src="assets/calendarGREY.png" class="booking-form__calendar-icon" alt="Calendar">
+                    <input type="date" id="check-out" class="booking-form__input" value="2025-03-16">
+                </div>
+            </label>
+            
+                <button class="booking-form__button">CHECK AVAILABILITY</button>
         </section>
 
         <section class="room-detail">

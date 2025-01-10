@@ -1,29 +1,33 @@
 .details__hero {
     background-color: $blacktwo;
-    padding: 2rem;
-    text-align: center;
+    padding: 2rem 1rem;
+    color: $white;
     position: relative;
+    padding-bottom: 2.7rem;
 
 
     &__p {
-    @include fontStyle($oswald, .7rem, 300, $white);
-    letter-spacing: 2px;
-    margin: 0;
-    text-align: left;
+        @include fontStyle($oswald, .7rem, 300, $white);
+        letter-spacing: 2px;
+        margin: 0;
+        text-align: left;
 
     }
 
     &__h1 {
-        @include fontStyle($oldtt, 3rem, 400, $white);
+        @include fontStyle($oldtt, 3rem, 100, $white);
         margin: .5rem 0;
         text-align: left;
 
     }
 
     &__navegation {
-            background-color: $white;
-            display: inline-flex; 
-            padding: 0.7rem 1.5rem;  
+        background-color: $white;
+        display: inline-flex; 
+        padding: 0.7rem 1.5rem;
+        right: 1.25rem;
+        bottom: -.1rem;
+        position: absolute; 
 
         }
 
