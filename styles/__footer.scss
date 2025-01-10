@@ -18,7 +18,7 @@
         }
     }
 
-    &__info{
+    &__info {
         position: relative; 
         padding: 20px 20px;
     }
@@ -43,44 +43,62 @@
         margin-bottom: 3rem;
 
         &__container-icons {
+            position: relative; 
             width: 1.5rem;
             height: 1.5rem;
             text-align: center;
+            background-color: transparent;
             transition: all 0.3s ease-in-out;
-            background-color: transparent; 
 
-            &:hover {
-                background-color: rgba(190, 173, 142, 0.2); 
-                padding: 2rem;
-                box-shadow: 0 0.5rem 1rem rgba(243, 213, 157, 0.758); 
-                border: 2px solid rgba(190, 173, 142, 1); 
+            img {
+                position: relative; 
+                z-index: 10;
             }
 
+            &::before {
+                content: ""; 
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 0; 
+                height: 0; 
+                background-color: rgba(190, 173, 142, 1); 
+                border: 2px solid rgba(190, 173, 142, 1); 
+                box-shadow: 0 0.5rem 1rem rgba(243, 213, 157, 0.758); 
+                transition: all 0.3s ease-in-out;
+                transform: translate(-50%, -50%);
+                z-index: -1; 
+            }
+
+            &:hover::before {
+                width: 2.5rem; 
+                height: 2.5rem; 
+            }
         }
     }
 
-    &__services{
+    &__services {
         position: relative; 
         padding: 20px 20px;
-    }
 
-    &__services-text {
-        font-family: old-standart, serif;
-        font-size: 24px;
-        font-weight: 200;
-        margin-top: 20px;
+        &-text {
+            font-family: old-standart, serif;
+            font-size: 24px;
+            font-weight: 200;
+            margin-top: 20px;
 
-        &__container {
-            display: flex;
-            justify-content: space-between;
-            gap: 20px;
-        }
+            &__container {
+                display: flex;
+                justify-content: space-between;
+                gap: 20px;
+            }
 
-        &__container-column {
-            flex: 1;
-            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-            color: gray;
-            line-height: 1.8;
+            &__container-column {
+                flex: 1;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                color: gray;
+                line-height: 1.8;
+            }
         }
     }
 
@@ -121,7 +139,7 @@
         &__call__name,
         &__email__name,
         &__location__name {
-            font-family: $oldtt ;
+            font-family: $oldtt;
             font-size: 22px;
             font-weight: 400;
             margin-bottom: 5px; 
@@ -153,54 +171,48 @@
             color: $black;
         }
     }
-}
 
-@media only screen and (min-width: 1000px) {
-    .footer {
+    @media only screen and (min-width: 1000px) {
         display: grid;
         grid-template-columns: 35% 30% 35%; 
         grid-template-rows: 1fr; 
-    
+
         &__info {
             margin-left: 25%;
             min-width: 30ch;
             margin-top: 2.75rem;
             padding-top: 1.5rem;
-    
-    
+
             &__description {
                 margin-left: 1.76rem;
             }
         }
-    
+
         &__description {
             margin-right: 30%;
             min-width: 30ch;
         }
-    
+
         &__social {
             min-width: 30ch;
-    
+
             &__container-icons {
                 display: inline-block;
                 margin-right: 10px;
-                transition: all 0.3s ease-in-out;
-    
             }
         }
-    
+
         &__services {
             margin-top: 4.25rem;
             margin-left: 1rem;
 
-    
             &-text {
                 font-size: 1.5rem;
                 font-weight: light;
                 margin-top: 0;
                 margin-bottom: 3rem;
             }
-    
+
             &-text__container {
                 display: grid;
                 grid-template-columns: repeat(2, 1fr);
@@ -208,34 +220,34 @@
                 font-size: 1rem;
             }
         }
-    
+
         &__contact {
             margin-top: 4.25rem;
             margin-right: 25%;
             min-width: 30ch;
-    
+
             &__title {
                 font-size: 1.5rem;
                 font-weight: light;
                 margin-bottom: 3rem;
             }
-    
+
             &__section {
                 display: flex;
                 align-items: center;
-    
+
                 &__icon {
                     margin-right: 0.5rem;
                 }
-    
+
                 &__text-container {
                     display: flex;
                     flex-direction: column;
-    
+
                     &__name {
                         font-weight: bold;
                     }
-    
+
                     &__value {
                         font-size: 0.9rem;
                         color: gray;
@@ -243,7 +255,7 @@
                 }
             }
         }
-    
+
         &__legal__info {
             grid-row-start: 4;
             grid-row-end: 5;
@@ -258,10 +270,11 @@
             padding-right: 10%;
             font-size: 0.9rem;
             color: gray;
-    
+
             &__terms {
                 font-size: 0.8rem;
             }
         }
     }
+
 }
