@@ -20,7 +20,7 @@
 
     &__info{
         position: relative; 
-        padding: 40px 20px;
+        padding: 20px 20px;
     }
 
     &__content {
@@ -61,7 +61,7 @@
 
     &__services{
         position: relative; 
-        padding: 40px 20px;
+        padding: 20px 20px;
     }
 
     &__services-text {
@@ -95,78 +95,44 @@
             margin-bottom: 0.5rem;
         }
 
-        &__call {
-            display: flex;
-            align-items: center;
-
-            &__icon {
-                margin-right: 10px;
-            }
-
-            &__text-container {
-                display: flex;
-                flex-direction: column;
-            }
-
-            &__name {
-                font-family: old-standart, serif;
-                font-size: 24px;
-                font-weight: 200;
-                margin-bottom: 0.5rem;
-            }
-
-            &__value {
-                font-size: 16px;
-            }
-        }
-
-        &__email {
-            display: flex;
-            align-items: center;
-
-            &__icon {
-                margin-right: 10px;
-            }
-
-            &__text-container {
-                display: flex;
-                flex-direction: column;
-            }
-
-            &__name {
-                font-family: old-standart, serif;
-                font-size: 24px;
-                font-weight: 200;
-                margin-bottom: 0.5rem;
-            }
-
-            &__value {
-                font-size: 16px;
-            }
-        }
-
+        &__call,
+        &__email,
         &__location {
+            display: flex; 
+            align-items: center; 
+            margin-bottom: 20px; 
+        }
+
+        &__call__icon,
+        &__email__icon,
+        &__location__icon {
+            width: 30px; 
+            height: 30px;
+            margin-right: 15px; 
+        }
+
+        &__call__text-container,
+        &__email__text-container,
+        &__location__text-container {
             display: flex;
+            flex-direction: column; 
+        }
 
-            &__icon {
-                margin-right: 10px;
-            }
+        &__call__name,
+        &__email__name,
+        &__location__name {
+            font-family: $oldtt ;
+            font-size: 22px;
+            font-weight: 400;
+            margin-bottom: 5px; 
+        }
 
-            &__text-container {
-                display: flex;
-                flex-direction: column;
-            }
-
-            &__name {
-                font-family: old-standart, serif;
-                font-size: 24px;
-                font-weight: 200;
-                margin-bottom: 0.5rem;
-            }
-
-            &__value {
-                font-size: 16px;
-            }
+        &__call__value,
+        &__email__value,
+        &__location__value {
+            font-family: $roboto;
+            font-size: 16px; 
+            color: gray; 
         }
     }
 
@@ -178,6 +144,7 @@
         background-color: $gray;
 
         &__copyright {
+            margin-bottom: 1rem;
             padding: 0.5rem 0;
         }
 
@@ -297,5 +264,4 @@
             }
         }
     }
-    
 }
