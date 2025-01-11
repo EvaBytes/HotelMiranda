@@ -1,5 +1,5 @@
 .hero {
-  background-color: rgb(41, 41, 41);
+  background-color: rgb(51, 51, 51);
   padding: 3rem 1rem;
   color: rgb(255, 255, 255);
   position: relative;
@@ -33,7 +33,7 @@
 .hero__navegation__return {
   font-family: "Archivo", "archivo-offline", "Roboto", sans-serif, arial;
   font-size: 0.875rem;
-  font-weight: 400;
+  font-weight: bold;
   color: rgb(34, 34, 34);
   text-decoration: none;
   margin-right: 0.5rem;
@@ -52,6 +52,14 @@
   margin: 0 0.5rem;
 }
 
+@media only screen and (min-width: 1000px) {
+  .hero {
+    padding-top: 10rem;
+    padding-right: 12rem;
+    padding-left: 12rem;
+    padding-bottom: 4rem;
+  }
+}
 .about-section {
   display: flex;
   flex-direction: column;
@@ -201,7 +209,7 @@
   justify-content: center;
 }
 .swiper-container .swiper-slide {
-  background-color: rgb(41, 41, 41);
+  background-color: rgb(51, 51, 51);
   padding: 4.5rem 2rem;
 }
 .swiper-container .swiper-slide__image {

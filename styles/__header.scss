@@ -67,6 +67,11 @@
     }
 
     @media only screen and (min-width: 1000px) {
+
+        margin: 1rem 5rem;
+        display: flex;
+        padding: 1rem 0;
+
         &__menu-mobile {
             display: none; 
         }

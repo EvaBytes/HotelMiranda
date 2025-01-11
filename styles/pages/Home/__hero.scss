@@ -1,15 +1,14 @@
 .hero {
     background-color: $blacktwo;
-    padding: 3rem 1rem;
+    padding: 3.5rem 2rem;
     color: $white;
     position: relative;
-    padding-bottom: 6rem;
 
 
     &__p {
     @include fontStyle($oswald, .7rem, 300, $white);
     letter-spacing: 2px;
-    margin: 0;
+    margin-right: 5rem;
     text-align: left;
 
     }
@@ -26,9 +25,9 @@
         display: flex;
         flex-direction: column; 
         align-items: left;
-        width: 65%; 
-        gap: 1.3rem; 
-        margin-top: 1rem;
+        width: 60%; 
+        gap: 1.5rem; 
+        margin-top: 3rem;
     
 
     &__button__take{
@@ -38,14 +37,12 @@
     &__button__learn-more {
         background-color: $black;
         color: $white;
-        border: 2px solid $white; 
-        margin: 1.5rem 0;
+        border: 2px solid rgba(255, 255, 255, 0.33); 
         font-family: sans-serif;
         font-size: .9rem;
         font-weight: 400;
         letter-spacing: 2px;
         padding: 1rem 1.2rem;
-        border: none;
         cursor: pointer;
         transition: background-color 0.3s, color 0.3s;
     
@@ -58,9 +55,46 @@
 
 
 
-
 @media only screen and (min-width: 1000px) {
+    .hero {
+        padding-top: 10rem;
+        padding-right: 12rem;
+        padding-left: 12rem;
+        padding-bottom: 4rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
 
+        &__p {
+            @include fontStyle($oswald, 1rem, 400, $white);
+            margin-bottom: 2rem;
+            }
+        
+            &__h1 {
+                @include fontStyle($oldtt, 7rem, 400, $white);
+                margin-right: 7rem;
+        
+            }
 
+    }
+
+    .buttons{
+        width: 30%;
+        display: flex;
+        flex-direction:row;
+        gap: 2rem;
+
+        &__button__take{
+            padding: 1.4rem 2.5rem;
+            white-space: nowrap; 
+
+        }
+    
+        &__button__learn-more {
+            padding: 1.4rem 2.5rem;
+            white-space: nowrap; 
+
+        }
+}
 
 }

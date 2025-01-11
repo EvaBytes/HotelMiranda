@@ -34,7 +34,7 @@
 
 
     &__navegation__return {
-        @include fontStyle($archivo, 0.875rem, 400, $black);
+        @include fontStyle($archivo, 0.875rem, bold, $black);
         text-decoration: none;
         margin-right: .5rem;
     }
@@ -47,5 +47,21 @@
         @include fontStyle ($archivo, 0.875rem, 400, $black);
         margin: 0 .5rem;
     }
+
     
 }
+
+@media only screen and (min-width: 1000px) {
+    .hero {
+        padding-top: 10rem;
+        padding-right: 12rem;
+        padding-left: 12rem;
+        padding-bottom: 4rem;
+
+    }
+}
+
+
+
+
+

@@ -137,11 +137,10 @@
 }
 
 .hero {
-  background-color: rgb(41, 41, 41);
-  padding: 3rem 1rem;
+  background-color: rgb(51, 51, 51);
+  padding: 3.5rem 2rem;
   color: rgb(255, 255, 255);
   position: relative;
-  padding-bottom: 6rem;
 }
 .hero__p {
   font-family: "Oswald", "offline-oswald", "Archivo", sans-serif, arial;
@@ -149,7 +148,7 @@
   font-weight: 300;
   color: rgb(255, 255, 255);
   letter-spacing: 2px;
-  margin: 0;
+  margin-right: 5rem;
   text-align: left;
 }
 .hero__h1 {
@@ -165,19 +164,18 @@
   display: flex;
   flex-direction: column;
   align-items: left;
-  width: 65%;
-  gap: 1.3rem;
-  margin-top: 1rem;
+  width: 60%;
+  gap: 1.5rem;
+  margin-top: 3rem;
 }
 .buttons__button__take {
   background-color: rgb(190, 173, 142);
-  margin: 1.5rem 0;
   font-family: sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
   letter-spacing: 2px;
   padding: 1rem 1.2rem;
-  border: none;
+  border: rgb(190, 173, 142);
   color: rgb(255, 255, 255);
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
@@ -188,21 +186,58 @@
 .buttons__button__learn-more {
   background-color: rgb(34, 34, 34);
   color: rgb(255, 255, 255);
-  border: 2px solid rgb(255, 255, 255);
-  margin: 1.5rem 0;
+  border: 2px solid rgba(255, 255, 255, 0.33);
   font-family: sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
   letter-spacing: 2px;
   padding: 1rem 1.2rem;
-  border: none;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
 .buttons__button__learn-more:hoover {
-  background-color: rgb(41, 41, 41);
+  background-color: rgb(51, 51, 51);
 }
 
+@media only screen and (min-width: 1000px) {
+  .hero {
+    padding-top: 10rem;
+    padding-right: 12rem;
+    padding-left: 12rem;
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero__p {
+    font-family: "Oswald", "offline-oswald", "Archivo", sans-serif, arial;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    margin-bottom: 2rem;
+  }
+  .hero__h1 {
+    font-family: "Old Standard TT", "offline-old_standard_ttregular", "Roboto", sans-serif, arial;
+    font-size: 7rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    margin-right: 7rem;
+  }
+  .buttons {
+    width: 30%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+  .buttons__button__take {
+    padding: 1.4rem 2.5rem;
+    white-space: nowrap;
+  }
+  .buttons__button__learn-more {
+    padding: 1.4rem 2.5rem;
+    white-space: nowrap;
+  }
+}
 .luxury {
   display: flex;
   flex-direction: column;
@@ -355,13 +390,12 @@
 }
 .luxury .room__details button {
   background-color: rgb(190, 173, 142);
-  margin: 1.5rem 0;
   font-family: sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
   letter-spacing: 2px;
   padding: 1rem 1.2rem;
-  border: none;
+  border: rgb(190, 173, 142);
   color: rgb(255, 255, 255);
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
@@ -483,10 +517,7 @@
   }
 }
 .menu {
-  padding-top: 7rem;
-  padding-right: 2rem;
-  padding-left: 2rem;
-  padding-bottom: 2rem;
+  padding: 5rem 2rem;
   background-color: rgb(255, 255, 255);
   color: rgb(34, 34, 34);
   position: relative;
@@ -510,10 +541,8 @@
 }
 .menu__header-icon {
   position: absolute;
-  top: -7rem;
-  right: -3rem;
-  margin-top: 0;
-  overflow: hidden;
+  top: 0;
+  right: -5%;
 }
 .menu__header-icon img {
   width: 120px;
