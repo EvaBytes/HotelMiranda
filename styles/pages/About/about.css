@@ -54,10 +54,27 @@
 
 @media only screen and (min-width: 1000px) {
   .hero {
-    padding-top: 10rem;
+    padding-top: 8rem;
     padding-right: 12rem;
     padding-left: 12rem;
     padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero__p {
+    font-family: "Oswald", "offline-oswald", "Archivo", sans-serif, arial;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    margin-bottom: 2rem;
+  }
+  .hero__h1 {
+    font-family: "Old Standard TT", "offline-old_standard_ttregular", "Roboto", sans-serif, arial;
+    font-size: 7rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    margin-right: 7rem;
   }
 }
 .about-section {

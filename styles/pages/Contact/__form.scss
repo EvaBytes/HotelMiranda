@@ -1,24 +1,27 @@
 .contact {
-    margin: 2rem 0;
-    padding: 1.5rem 1.5rem;
+    margin: 3rem 0 0 0;
+    padding: 1.5rem 1rem;
     background-color: $white;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
 
     &__hotel, &__phone, &__email {
-        position: relative; 
-        margin-bottom: 6rem;
+        position: relative;
+        margin: 0 0 5.5rem 0 ;
         display: flex;
-        align-items: flex-start; 
+        align-items: flex-start;
 
         &__icon {
-            margin-right: 1.5rem; 
+            margin-right: 1.5rem;
             width: 50px;
             height: auto;
-            z-index: 3; 
+            z-index: 3;
         }
 
         &__info {
-            z-index: 4; 
-            position: relative; 
+            z-index: 4;
+            position: relative;
             display: flex;
             flex-direction: column;
 
@@ -29,27 +32,27 @@
 
             &__address, &__number, &__add {
                 @include fontStyle($roboto, 16px, 100);
-                margin: 5px 0 0;
+                margin: .5rem 1rem;
                 line-height: 1.5;
             }
+
             &__img {
                 position: absolute;
                 width: 150px;
                 height: auto;
                 margin-left: 5rem;
                 color: $gray;
-                z-index: -1; 
+                z-index: -1;
             }
-
         }
-
     }
 
     &__us {
-        background-color: $gray;
+        padding: 1.5rem 1rem;
         height: 100%;
         width: 100%;
     }
+
 }
 
 .form__container {
@@ -113,4 +116,58 @@
             width: 80%;
             text-align: center;            
         }
+}
+
+@media only screen and (min-width: 1000px) {
+
+.contact{
+    flex-direction: row; 
+    justify-content: center;
+    margin-top: 4rem;
+
+    &__hotel, &__phone, &__email {
+        flex: 1; 
+        margin: 0 0 2rem 5rem; 
+        justify-content: center; 
+        align-items: center;
+        flex-direction: row; 
+        text-align: center;
     }
+}
+.contact__us{
+    width: 60%; 
+    height: auto;
+    margin: 0 auto; 
+    display: block;
+
+}
+
+.form__container {
+    width: 80%; 
+    margin: 2rem auto 0 auto; 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto auto auto; 
+    gap: 1.5rem; 
+    justify-content: center; 
+
+    &__group {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        position: relative;
+        padding: 1rem 2rem; 
+        background-color: $gray; 
+        border: 1px solid lighten($gray, 10%); 
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    &__button {
+        justify-self: center; 
+        width: 40%; 
+    }
+}
+}

@@ -3,7 +3,7 @@
     padding: 2rem 1rem;
     color: $white;
     position: relative;
-    padding-bottom: 6rem;
+    padding-bottom: 6.5rem;
 
 
     &__p {
@@ -49,12 +49,26 @@
     
 }
 
-@media only screen and (min-width: 1000px) {
-    .hero {
-        padding-top: 10rem;
-        padding-right: 12rem;
-        padding-left: 12rem;
-        padding-bottom: 4rem;
-
-    }
+    @media only screen and (min-width: 1000px) {
+        .hero {
+            padding-top: 10rem;
+            padding-right: 12rem;
+            padding-left: 12rem;
+            padding-bottom: 4rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+    
+            &__p {
+                @include fontStyle($oswald, 1rem, 400, $white);
+                margin-bottom: 2rem;
+                }
+            
+                &__h1 {
+                    @include fontStyle($oldtt, 7rem, 400, $white);
+                    margin-right: 7rem;
+            
+                }
+    
+        }
 }

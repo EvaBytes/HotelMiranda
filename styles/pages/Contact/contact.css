@@ -3,7 +3,7 @@
   padding: 2rem 1rem;
   color: rgb(255, 255, 255);
   position: relative;
-  padding-bottom: 6rem;
+  padding-bottom: 6.5rem;
 }
 .hero__p {
   font-family: "Oswald", "offline-oswald", "Archivo", sans-serif, arial;
@@ -58,16 +58,36 @@
     padding-right: 12rem;
     padding-left: 12rem;
     padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero__p {
+    font-family: "Oswald", "offline-oswald", "Archivo", sans-serif, arial;
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    margin-bottom: 2rem;
+  }
+  .hero__h1 {
+    font-family: "Old Standard TT", "offline-old_standard_ttregular", "Roboto", sans-serif, arial;
+    font-size: 7rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    margin-right: 7rem;
   }
 }
 .contact {
-  margin: 2rem 0;
-  padding: 1.5rem 1.5rem;
+  margin: 3rem 0 0 0;
+  padding: 1.5rem 1rem;
   background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .contact__hotel, .contact__phone, .contact__email {
   position: relative;
-  margin-bottom: 6rem;
+  margin: 0 0 5.5rem 0;
   display: flex;
   align-items: flex-start;
 }
@@ -95,7 +115,7 @@
   font-size: 16px;
   font-weight: 100;
   color: rgb(34, 34, 34);
-  margin: 5px 0 0;
+  margin: 0.5rem 1rem;
   line-height: 1.5;
 }
 .contact__hotel__info__img, .contact__phone__info__img, .contact__email__info__img {
@@ -107,7 +127,7 @@
   z-index: -1;
 }
 .contact__us {
-  background-color: rgb(248, 248, 248);
+  padding: 1.5rem 1rem;
   height: 100%;
   width: 100%;
 }
@@ -181,4 +201,51 @@
 }
 .form__container__button:hoover {
   background-color: #dad0bf;
+}
+
+@media only screen and (min-width: 1000px) {
+  .contact {
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 4rem;
+  }
+  .contact__hotel, .contact__phone, .contact__email {
+    flex: 1;
+    margin: 0 0 2rem 5rem;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+  }
+  .contact__us {
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+  .form__container {
+    width: 80%;
+    margin: 2rem auto 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 1.5rem;
+    justify-content: center;
+  }
+  .form__container__group {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    padding: 1rem 2rem;
+    background-color: rgb(248, 248, 248);
+    border: 1px solid white;
+  }
+  .form__container textarea {
+    height: 150px;
+  }
+  .form__container__button {
+    justify-self: center;
+    width: 40%;
+  }
 }/*# sourceMappingURL=contact.css.map */
