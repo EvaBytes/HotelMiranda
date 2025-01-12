@@ -37,7 +37,6 @@
   background-color: $white;
   padding: 2rem 2rem;
   width: 100%;
-  max-width: 400px;
   margin: auto;
 
   &__title {
@@ -100,3 +99,12 @@
   }
 }
 
+@media only screen and (min-width: 1000px) {
+
+.double__room-detail__image {
+  width: 100%; 
+  object-fit: cover; 
+  margin-top: 1rem;
+}
+
+}

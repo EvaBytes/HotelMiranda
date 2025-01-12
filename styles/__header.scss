@@ -2,6 +2,9 @@
     background-color: rgb(255, 255, 255);
     box-shadow: 0 5px 6px -3px rgba(0, 0, 0, 0.29);
     position: relative; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     &__menu-web {
         display: none;
@@ -16,7 +19,7 @@
         font-family: sans-serif;
         font-weight: bold;
         color: black;
-        z-index: 1000;
+        z-index: 10;
         background-color: white;
 
         &.active {
@@ -32,8 +35,6 @@
         a {
             text-decoration: none;
             color: $black;
-            padding-bottom: 1rem;
-            display: block; 
         }
     }
 
@@ -56,8 +57,8 @@
     }
 
     &__header-icons {
-        display: inline;
-        position: absolute;
+        display: inline-block;
+        align-items: end;
         top: 1.5rem;
         right: 1.4rem;
 
@@ -66,11 +67,47 @@
         }
     }
 
-    @media only screen and (min-width: 1000px) {
+}
 
-        margin: 1rem 5rem;
-        display: flex;
-        padding: 1rem 0;
+@media only screen and (min-width: 1000px) {
+
+    .header {
+        background-color: black;
+        position: relative;
+        padding-bottom: 6.5rem;
+    }
+    
+    .nav {
+        background-color: $white;
+        position: absolute; 
+        width: 90%;
+        transform: translate(5.5%, 25%);
+        z-index: 10;
+        display: flex; 
+        align-items: center;
+        justify-content: space-between;
+
+        &__logo{
+            display: inline-block;
+        }
+
+        &__header-icons {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem; 
+
+            img{
+                padding: 0.5rem; 
+                border: 1px solid $darkgray; 
+                transition: background-color 0.3s ease, border-color 0.3s ease;
+            }
+
+            img:hover {
+                background-color: $lightgray; 
+                border-color: $beige; 
+            }
+        }
+    
 
         &__menu-mobile {
             display: none; 
@@ -78,6 +115,7 @@
 
         &__menu-web {
             display: flex;
+            gap: 2rem; 
 
             li {
                 list-style: none;
@@ -94,5 +132,5 @@
                 display: block; 
             }
         }
-    }
+}
 }
