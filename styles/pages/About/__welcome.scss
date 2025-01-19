@@ -129,4 +129,32 @@
   }
 }
 
+@media only screen and (min-width: 1000px) {
+  .about-section {
+    justify-content: center;
+    align-items: center; 
+    margin: 0 7rem;
+
+
+    &__video{
+      width: 60%;
+      height: auto;
+  
+      &-iframe {
+        height: 600px;
+      }
+  }
+    &__text {
+      margin: 1rem 16rem;
+      font-size: 3.4rem;
+
+    }
+
+    &__features {
+      
+    }
+
+}
+
+}
 

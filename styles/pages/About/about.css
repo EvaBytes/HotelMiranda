@@ -192,6 +192,24 @@
   background-color: rgb(119, 119, 119);
 }
 
+@media only screen and (min-width: 1000px) {
+  .about-section {
+    justify-content: center;
+    align-items: center;
+    margin: 0 7rem;
+  }
+  .about-section__video {
+    width: 60%;
+    height: auto;
+  }
+  .about-section__video-iframe {
+    height: 600px;
+  }
+  .about-section__text {
+    margin: 1rem 16rem;
+    font-size: 3.4rem;
+  }
+}
 .section {
   background-color: rgb(34, 34, 34);
 }
