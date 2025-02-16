@@ -317,6 +317,10 @@
     color: rgb(34, 34, 34);
     padding-bottom: 1rem;
     display: block;
+    transition: color 0.3s ease;
+  }
+  .nav__menu-web a:hover {
+    color: rgb(189, 172, 141);
   }
   .nav__logo-web {
     display: flex;

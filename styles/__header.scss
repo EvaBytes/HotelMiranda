@@ -113,6 +113,11 @@
                 color: $black;
                 padding-bottom: 1rem;
                 display: block; 
+                transition: color 0.3s ease; 
+
+                &:hover {
+                    color: $beigetwo; 
+                }
             }
         }
 

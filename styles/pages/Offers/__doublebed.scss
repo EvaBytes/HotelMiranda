@@ -85,3 +85,42 @@
         }
     }
 }
+
+@media only screen and (min-width: 1000px) {
+    .offer{
+        &__rooms {
+            background-color: $white; 
+            box-shadow: none; 
+            margin: 4rem 15rem; 
+
+            &__img {
+                height: 30%;
+                background-size: cover;
+                background-position: center;
+                align-items: center;
+                margin-bottom: 2rem;
+            }
+    
+            &__pricing {
+                position: absolute;
+                top: 55%;
+                right: 2.5rem;
+                text-align: right;
+    
+                &__old {
+                    @include fontStyle($roboto, 1.2rem, normal, $beige);
+                    text-decoration: line-through;
+                    display: block;
+                }
+    
+                &__new {
+                    @include fontStyle($roboto, 1.45rem, bold,);
+                    color: $red;
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+
+    }
+
+}
