@@ -228,6 +228,9 @@
 .nav__menu-web {
   display: none;
 }
+.nav__logo-web {
+  display: none;
+}
 .nav__menu-mobile {
   display: none;
   position: absolute;
@@ -324,6 +327,37 @@
   }
   .nav__logo-web {
     display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    text-decoration: none;
+    color: black;
+  }
+  .nav__logo-web-letter {
+    position: absolute;
+    top: 27%;
+    width: 5rem;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+    font-family: sans-serif;
+  }
+  .nav__logo-web-icon {
+    width: 5rem;
+    height: 5rem;
+  }
+  .nav__logo-web-text h1, .nav__logo-web-text h2 {
+    margin: 0;
+    font-family: "Archivo", "archivo-offline", "Roboto", sans-serif, arial;
+    line-height: 1;
+    letter-spacing: 2px;
+  }
+  .nav__logo-web-text h1 {
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .nav__logo-web-text h2 {
+    font-size: 0.9rem;
+    font-weight: 300;
   }
   .nav__hamburger {
     display: none;

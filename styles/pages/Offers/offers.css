@@ -76,6 +76,12 @@
     color: rgb(255, 255, 255);
     margin-right: 7rem;
   }
+  .hero__navegation__return {
+    transition: color 0.3s ease;
+  }
+  .hero__navegation__return:hover {
+    color: rgb(189, 172, 141);
+  }
 }
 .offer {
   margin: 0 1rem;

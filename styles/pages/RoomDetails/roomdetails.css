@@ -77,6 +77,12 @@
     color: rgb(255, 255, 255);
     margin-right: 7rem;
   }
+  .details__hero__navegation__return {
+    transition: color 0.3s ease;
+  }
+  .details__hero__navegation__return:hover {
+    color: rgb(189, 172, 141);
+  }
 }
 .double__room {
   flex-direction: column;

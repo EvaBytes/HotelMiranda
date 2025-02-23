@@ -9,6 +9,11 @@
         display: none;
     }
 
+    &__logo-web {
+        display: none;
+    }
+
+
     &__menu-mobile {
         display: none;
         position: absolute;
@@ -123,8 +128,44 @@
 
         &__logo-web{
             display:flex;
+            align-items: center;
+            gap: 0.5rem;
+            text-decoration: none;
+            color: black;
         }
 
+        &__logo-web-letter {
+            position: absolute;
+            top: 27%;
+            width: 5rem;
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 600;
+            font-family: sans-serif;
+        }
+
+        &__logo-web-icon {
+            width: 5rem;
+            height: 5rem;
+        }
+
+        &__logo-web-text h1,
+        &__logo-web-text h2 {
+            margin:0;
+            font-family: $archivo;
+            line-height: 1;
+            letter-spacing: 2px;
+        }
+
+        &__logo-web-text h1 {
+            font-size: 1.2rem;
+            font-weight: 700;
+        }
+
+        &__logo-web-text h2 {
+            font-size: .9rem;
+            font-weight: 300;
+        }
         &__hamburger {
             display: none;
         }
