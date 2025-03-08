@@ -1,77 +1,142 @@
 .menu {
-    padding: 5rem 2rem;
-    background-color: $white;
-    color: $black;
     position: relative;
-    text-align: center;
+    max-width: 100%;
+    overflow: hidden;
+    padding: 6rem 2rem 3.5rem 2rem;
 
-    &__header {
-        text-align: left;
-        margin-bottom: 2rem;
-        position: relative;
+    &__header-icon {
+        position: absolute;
+        width: 10rem;
+        height: 10rem;
+        top: .5rem;
+        right: -2.5rem;
 
-        &-subtitle {
-            font-family: $archivo;
-            font-size: 0.9rem;
-            letter-spacing: 2px;
-            color: $darkgray;
-            margin-bottom: 0.5rem;
+        @media (min-width: 1000px) {
+            position: fixed;
+            right: auto;
+            left: -14.5rem;
+            top: 9rem;
         }
+    }
 
-        &-title {
-            font-size: 3.5rem;
-            font-weight: 100;
-            line-height: 1.2;
+    &__header-subtitle {
+        font-family: $roboto;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1rem; 
+        line-height: 1.5rem;
+        letter-spacing: 0.28rem;
+        color: $darkgrey;
+
+        @media (min-width: 1000px) {
+            font-size: 1.4rem; 
         }
+    }
 
-        &-icon {
-            position: absolute;
-            top: 0;
-            right: -5%;
+    &__header-title {
+        padding-top: 1.7rem;
+        font-family: old-standart, serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3.5rem; 
+        line-height: 4rem; 
 
-            img {
-                width: 120px;
-                height: 120px;
-            }
+        @media (min-width: 1000px) {
+            font-size: 5.6rem; 
+            line-height: 6rem;
         }
     }
 
     &__swiper {
         position: relative;
-        width: 100%;
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 2rem 0;
-        overflow: hidden;
-    }
+        max-width: 100%;
+        padding-top: 4.4rem;
+        height: fit-content;
 
-    .swiper-wrapper {
-        display: flex;
-        align-items: center;
-    }
+        .swiper-wrapper {
+            display: flex;
+            align-items: center;
+        }
 
-    .swiper-slide {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        .swiper-slide {
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+
+            @media (min-width: 1000px) {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+        }
+
+        &-button-prev,
+        &-button-next {
+            user-select: none;
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: .5rem;
+            bottom: 5%;
+            width: 2.5rem;
+            height: 2.5rem;
+            z-index: 99;
+            background-color: $beige;
+            font-family: $roboto;
+            font-size: 1.5rem;
+            color: $black;
+            border-radius: 2px;
+            font-weight: 300;
+            cursor: pointer;
+
+            @media (min-width: 1000px) {
+                top:rem;
+                width: 3rem;
+                height: 3rem;
+            }
+
+            &:hover {
+                background-color: $beigetwo;
+                color: $white;
+            }
+        }
+
+        &-button-prev {
+            bottom: .5rem;
+            right: 5rem;
+        }
+
+        &-button-next {
+            bottom: .5rem;
+            right: 1rem;
+        }
     }
 
     &__item {
         display: flex;
+        flex-direction: row;
         align-items: center;
-        gap: 1.5rem;
+        gap: 1rem;
         background-color: $white;
-        padding: 1rem;
+        padding: 0 1rem;
         border-radius: 10px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        text-align: center;
+        width: 100%; 
+
+        @media (min-width: 1000px) {
+            padding: 5rem;
+        }
 
         &-image {
             img {
-                width: 100px;
-                height: 100px;
-                border-radius: 10px;
-                background-color: $lightgray;
+                width: 6.5rem; 
+                height: 6.5rem; 
+                object-fit: cover;
+                border-radius: 5px;
+
+                @media (min-width: 1000px) {
+                    width: 8rem; 
+                    height: 8rem;
+                }
             }
         }
 
@@ -83,98 +148,106 @@
                 font-size: 1.3rem;
                 font-weight: 100;
                 margin-bottom: 0.5rem;
+
+                @media (min-width: 1000px) {
+                    font-size: 2.4rem; 
+                    line-height: 2.4rem;
+                }
             }
 
             &-description {
+                font-family: $roboto;
                 font-size: 0.9rem;
                 line-height: 1.5;
-                color: $darkgray;
+                color: $darkgrey;
+
+                @media (min-width: 1000px) {
+                    font-size: 1.4rem; 
+                    line-height: 2.4rem;
+                }
             }
         }
-    }
 
-    .swiper-button-prev, .swiper-button-next {
-        color: $black;
-        width: 2.5rem;
-        height: 2.5rem;
-        border-radius: 6px;
-        background-color: rgba(0, 0, 0, 0.1);
-        transition: background-color 0.3s;
+        &-arrow {
+            display: none;
+            width: 3rem;
+            height: 1.5rem;
+            align-self: center;
+            margin-right: 3rem;
+            margin-left: 3rem;
+
+            @media (min-width: 1000px) {
+                display: block;
+            }
+        }
 
         &:hover {
-            background-color: rgba(0, 0, 0, 0.3);
-        }
-    }
+            @media (min-width: 1000px) {
+                transition: all 0.3s;
+                background-color: $darkgrey;
 
-    .swiper-pagination {
-        position: relative;
-        bottom: 10px;
-
-        .swiper-pagination-bullet {
-            background: $black;
-            opacity: 0.5;
-        }
-
-        .swiper-pagination-bullet-active {
-            background: $black;
-            opacity: 1;
-        }
-    }
-}
-
-@media (max-width: 768px) {
-    .menu {
-        padding: 2rem;
-
-        &__header {
-            &-title {
-                font-size: 2rem;
-            }
-        }
-
-        &__item {
-            flex-direction: column;
-            text-align: center;
-
-            &-image img {
-                width: 80px;
-                height: 80px;
-            }
-
-            &-details {
-                &-title {
-                    font-size: 1.1rem;
+                .menu__item-details-title,
+                .menu__item-details-description {
+                    color: $white;
                 }
 
-                &-description {
-                    font-size: 0.8rem;
+                .menu__item-arrow {
+                    display: block;
                 }
             }
         }
     }
-}
 
-@media (min-width: 1000px) {
-    .menu {
-        padding: 4rem;
+    &__images {
+        max-width: 100%;
+        height: fit-content;
+        padding-top: 12rem;
+        text-align: center;
 
-        &__header {
-            &-title {
-                font-size: 3rem;
+        @media (min-width: 1000px) {
+            display: none;
+        }
+
+        .swiper-wrapper {
+            display: flex;
+            align-items: center;
+        }
+
+        .swiper-slide {
+            img {
+                width: 33.5rem;
+                height: 33.5rem;
+                object-fit: cover;
             }
         }
 
-        &__swiper {
-            padding: 3rem 0;
+        .swiper-pagination {
+            display: flex;
+            justify-content: center;
+            height: 0.8rem;
+            margin-top: 3.2rem;
+            color: $beige;
+
+            .swiper-pagination-bullet-active {
+                background: $beige;
+            }
+        }
+    }
+
+    &__imagesDesktop {
+        padding-top: 12rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+
+        @media (max-width: 999px) {
+            display: none;
         }
 
-        &__item {
-            flex: 1 1 calc(33% - 1rem);
-
-            &-image img {
-                width: 120px;
-                height: 120px;
-            }
+        &-img {
+            height: 25%;
+            width: 33%;
         }
     }
 }

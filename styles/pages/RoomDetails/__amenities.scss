@@ -3,7 +3,7 @@
     padding: 2rem;
 
     p {
-        @include fontStyle($roboto, .8rem, normal, $darkgray); 
+        @include fontStyle($roboto, .8rem, normal, $darkgrey); 
         line-height: 1.6; 
         margin-bottom: 1.5rem; 
         text-align: justify;
@@ -17,7 +17,7 @@
     }
 
     &__hr {
-        border-top: 1px solid $grayone;
+        border-top: 1px solid $greyone;
         margin: .5rem 0;
     }
 
@@ -39,7 +39,7 @@
             height: 20px;
         }
 
-        @include fontStyle($roboto, 1rem, normal, $darkgray);
+        @include fontStyle($roboto, 1rem, normal, $darkgrey);
         }
     }
 }
@@ -89,7 +89,7 @@
     }
 
     &__description {
-        @include fontStyle($roboto, 1rem, normal, $darkgray);
+        @include fontStyle($roboto, 1rem, normal, $darkgrey);
         margin-top: 0.5rem;
         line-height: 1.5;
         max-width: 300px;
@@ -103,14 +103,14 @@
             @include fontStyle($oldtt, 1.5rem, 100, $blacktwo);
             letter-spacing: 2px;
             margin-bottom: 1rem;
-            border-bottom: 1px solid $grayone;
+            border-bottom: 1px solid $greyone;
             padding-bottom: 0.5rem;
             width: 100%; 
             
         }
     
         &__description {
-            @include fontStyle($roboto, 1rem, normal, $darkgray);
+            @include fontStyle($roboto, 1rem, normal, $darkgrey);
             line-height: 1.5;
             margin-top: 1rem;
         }

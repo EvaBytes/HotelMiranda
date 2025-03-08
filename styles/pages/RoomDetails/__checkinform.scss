@@ -5,7 +5,7 @@
 
   &__detail {
     &__title {
-      @include fontStyle($archivo, 0.7rem, 500, $darkgray);
+      @include fontStyle($archivo, 0.7rem, 500, $darkgrey);
       margin-bottom: 0.5rem;
       letter-spacing: 2px;
     }
@@ -59,7 +59,7 @@
       position: relative;
       display: flex;
       align-items: center;
-      background-color: $graytwo;
+      background-color: $greytwo;
       padding: 0.8rem 1rem;
       border-radius: 5px;
 
@@ -71,7 +71,7 @@
       }
 
       .booking-form__input {
-        @include fontStyle($archivo, 1rem, 400, $darkgray);
+        @include fontStyle($archivo, 1rem, 400, $darkgrey);
         border: none;
         background: transparent;
         cursor: pointer; 

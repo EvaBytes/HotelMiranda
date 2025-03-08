@@ -39,7 +39,7 @@
             margin-bottom: 2rem;
 
             &__name {
-                @include fontStyle($oswald, 0.8rem, bold, $darkgray);
+                @include fontStyle($oswald, 0.8rem, bold, $darkgrey);
                 letter-spacing: 2px;
                 text-transform: uppercase;
                 margin-bottom: 0.5rem;
@@ -51,7 +51,7 @@
             }
 
             &__description {
-                @include fontStyle($roboto, 0.95rem, normal, $darkgray);
+                @include fontStyle($roboto, 0.95rem, normal, $darkgrey);
                 line-height: 1.6;
                 margin-bottom: 2rem;
             }

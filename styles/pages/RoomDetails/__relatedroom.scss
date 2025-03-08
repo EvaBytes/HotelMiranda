@@ -20,7 +20,7 @@
         width: 100%;
         max-width: 800px;
         height: 300px;
-        background-color: $lightgray;
+        background-color: $lightgrey;
 
         img {
             width: 100%;
@@ -108,13 +108,13 @@
                 color: $black;
 
             &:hover {
-                color: $darkgray;
+                color: $darkgrey;
             }
             }
         }
 
         &__description {
-            @include fontStyle($roboto, 1rem, normal, $darkgray);
+            @include fontStyle($roboto, 1rem, normal, $darkgrey);
             margin-bottom: 1.5rem;
         }
 

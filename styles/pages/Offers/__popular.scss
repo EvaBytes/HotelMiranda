@@ -116,18 +116,18 @@
                         color: $black;
 
                         &:hover {
-                            color: $darkgray;
+                            color: $darkgrey;
                         }
                     }
                 }
 
                 &__description {
-                    @include fontStyle($roboto, 1rem, normal, $darkgray);
+                    @include fontStyle($roboto, 1rem, normal, $darkgrey);
                     margin-bottom: 1rem;
                 }
 
                 &__details {
-                    @include fontStyle($roboto, 1rem, bold, $grayone);
+                    @include fontStyle($roboto, 1rem, bold, $greyone);
                     display: flex;
                     justify-content: center;
 

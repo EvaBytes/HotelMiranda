@@ -64,7 +64,7 @@
 
     .room__list {
         padding: 1.5rem 0; 
-        background-color: $graytwo;
+        background-color: $greytwo;
 
             &__container {
             flex-wrap: wrap;
@@ -74,7 +74,7 @@
             &__img {
                 margin: 0.5rem 0.5rem; 
                 width: 90%;
-                background-color: $lightgray;
+                background-color: $lightgrey;
         
                 img {
                 display: flex;
@@ -127,13 +127,13 @@
             transition: color 0.3s;
 
             &:hover {
-            color: $darkgray;
+            color: $darkgrey;
             }
         }
         }
 
         &__description {
-        @include fontStyle($roboto, 16px, normal, $darkgray);
+        @include fontStyle($roboto, 16px, normal, $darkgrey);
         line-height-step: 2px;
         margin-bottom: 10px; 
         }
@@ -151,13 +151,13 @@
         }
 
         &__booking {
-            @include fontStyle($roboto, 1rem, bold, $grayone);
+            @include fontStyle($roboto, 1rem, bold, $greyone);
             margin-left: 0.5rem; 
             text-decoration: none;
             transition: color 0.3s;
 
             &:hover {
-            color: $darkgray;
+            color: $darkgrey;
             }
         }
 
