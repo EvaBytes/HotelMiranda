@@ -1,138 +1,180 @@
-@import 'swiper/swiper-bundle.css';
-
 .menu {
     padding: 5rem 2rem;
     background-color: $white;
     color: $black;
     position: relative;
+    text-align: center;
 
     &__header {
-    text-align: left; 
-    margin-bottom: 2rem;
-    position: relative;
+        text-align: left;
+        margin-bottom: 2rem;
+        position: relative;
 
-    &-subtitle {
-        font-family: $archivo;
-        font-size: 0.9rem;
-        letter-spacing: 2px;
-        color: $darkgray;
-        margin-bottom: 0.5rem;
-    }
+        &-subtitle {
+            font-family: $archivo;
+            font-size: 0.9rem;
+            letter-spacing: 2px;
+            color: $darkgray;
+            margin-bottom: 0.5rem;
+        }
 
-    &-title {
-        font-size: 3.5rem;
-        font-weight: 100;
-        line-height: 1.2;
-    }
+        &-title {
+            font-size: 3.5rem;
+            font-weight: 100;
+            line-height: 1.2;
+        }
 
-    &-icon {
-        position: absolute;
-        top:0;
-        right: -5%;
+        &-icon {
+            position: absolute;
+            top: 0;
+            right: -5%;
 
-        img {
-        width: 120px;
-        height: 120px;
+            img {
+                width: 120px;
+                height: 120px;
+            }
         }
     }
+
+    &__swiper {
+        position: relative;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem 0;
+        overflow: hidden;
     }
 
-    &__items {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+    .swiper-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .swiper-slide {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     &__item {
-    display: flex;
-    align-items: center;
-    gap: 1.5rem;
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+        background-color: $white;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        text-align: center;
 
-    &-image {
-        img {
-        width: 100px;
-        height: 100px;
-        background-color: $lightgray;
+        &-image {
+            img {
+                width: 100px;
+                height: 100px;
+                border-radius: 10px;
+                background-color: $lightgray;
+            }
+        }
+
+        &-details {
+            flex: 1;
+
+            &-title {
+                font-family: $oldtt;
+                font-size: 1.3rem;
+                font-weight: 100;
+                margin-bottom: 0.5rem;
+            }
+
+            &-description {
+                font-size: 0.9rem;
+                line-height: 1.5;
+                color: $darkgray;
+            }
         }
     }
 
-    &-details {
-        flex: 1;
-
-        &-title {
-        font-family: $oldtt;
-        font-size: 1.3rem;
-        font-weight: 100;
-        margin-bottom: 0.5rem;
-        }
-
-        &-description {
-        font-size: 0.9rem;
-        line-height: 1.5;
-        color: $darkgray;
-        }
-    }
-    }
-
-    &__pagination {
-    display: flex;
-    justify-content: flex-end; 
-    align-items: center;
-    gap: 1rem;
-    margin-top: 2rem;
-
-    &-button {
-        width: 40px;
-        height: 40px;
-        border: none;
-        background-color: $lightgray;
+    .swiper-button-prev, .swiper-button-next {
         color: $black;
-        font-size: 1rem;
-        cursor: pointer;
-        transition: background-color 0.3s, color 0.3s;
+        width: 2.5rem;
+        height: 2.5rem;
+        border-radius: 6px;
+        background-color: rgba(0, 0, 0, 0.1);
+        transition: background-color 0.3s;
 
         &:hover {
-        background-color: $beige;
-        color: $white;
-        }
-
-        &--prev {
-        background-color: $gray;
-        }
-
-        &--next {
-        background-color: $lightgray;
-        color: $black;
+            background-color: rgba(0, 0, 0, 0.3);
         }
     }
+
+    .swiper-pagination {
+        position: relative;
+        bottom: 10px;
+
+        .swiper-pagination-bullet {
+            background: $black;
+            opacity: 0.5;
+        }
+
+        .swiper-pagination-bullet-active {
+            background: $black;
+            opacity: 1;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .menu {
+        padding: 2rem;
+
+        &__header {
+            &-title {
+                font-size: 2rem;
+            }
+        }
+
+        &__item {
+            flex-direction: column;
+            text-align: center;
+
+            &-image img {
+                width: 80px;
+                height: 80px;
+            }
+
+            &-details {
+                &-title {
+                    font-size: 1.1rem;
+                }
+
+                &-description {
+                    font-size: 0.8rem;
+                }
+            }
+        }
     }
 }
 
 @media (min-width: 1000px) {
     .menu {
-    padding: 4rem;
+        padding: 4rem;
 
-    &__header {
-        &-title {
-        font-size: 3rem;
-        }
-    }
-
-    &__items {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 2rem;
-
-        &__item {
-        flex: 1 1 calc(50% - 1rem);
-
-        &-image {
-            img {
-            width: 120px;
-            height: 120px;
+        &__header {
+            &-title {
+                font-size: 3rem;
             }
         }
+
+        &__swiper {
+            padding: 3rem 0;
         }
-    }
+
+        &__item {
+            flex: 1 1 calc(33% - 1rem);
+
+            &-image img {
+                width: 120px;
+                height: 120px;
+            }
+        }
     }
 }

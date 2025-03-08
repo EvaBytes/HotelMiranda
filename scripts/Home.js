@@ -1,21 +1,30 @@
-import Swiper, { Navigation } from 'swiper';
-import 'swiper/swiper-bundle.css';
-
-const swiper = new Swiper('.menu__swiper', {
-  modules: [Navigation], // Habilitar el módulo de navegación
-  slidesPerView: 1, // Predeterminado: 1 imagen visible
-  spaceBetween: 20, // Espacio entre las imágenes
-  loop: true, // Slider infinito
-  navigation: {
-    nextEl: '#menu-next', // Botón siguiente personalizado
-    prevEl: '#menu-prev', // Botón previo personalizado
-  },
-  breakpoints: {
-    667: {
-      slidesPerView: 3, // Tres imágenes visibles en pantallas medianas (tablets)
+document.addEventListener("DOMContentLoaded", function () {
+  const swiper = new Swiper(".swiper", {
+    effect: "slide",
+    direction: "horizontal",
+    loop: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    autoplay: {
+      delay: 6000,
     },
-    1000: {
-      slidesPerView: 6, // Seis imágenes visibles en pantallas grandes (escritorio)
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
     },
-  },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      1000: {
+        slidesPerView: 3,
+        spaceBetween: 30,
+      },
+    },
+  });
 });
