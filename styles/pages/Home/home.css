@@ -576,7 +576,7 @@
   }
 }
 .menu__header-title {
-  padding-top: 1.7rem;
+  padding: 1.7rem 0;
   font-family: old-standart, serif;
   font-style: normal;
   font-weight: 400;

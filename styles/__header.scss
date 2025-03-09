@@ -1,9 +1,18 @@
 .nav {
     background-color: rgb(255, 255, 255);
     box-shadow: 0 5px 6px -3px rgba(0, 0, 0, 0.29);
-    position: relative; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
     display: flex;
     align-items: center;
+    transition: top 0.3s ease-in-out;
+
+    &.transition-top {
+        top: -100px;
+    }
 
     &__menu-web {
         display: none;
@@ -13,13 +22,12 @@
         display: none;
     }
 
-
     &__menu-mobile {
-        display: none;
+        display: none; 
         position: absolute;
         top: 100%; 
         left: 0;
-        width: 100%; 
+        width: 100%;
         font-family: sans-serif;
         font-weight: bold;
         color: black;
@@ -45,7 +53,7 @@
     &__hamburger {
         display: inline;
         position: absolute;
-        top: 1.6rem; 
+        top: 1.6rem;
         left: 1.4rem;
 
         img {
@@ -62,7 +70,7 @@
     }
 
     &__header-icons {
-        display:flex;
+        display: flex;
         align-items: end;
 
         img {
@@ -72,28 +80,26 @@
 }
 
 @media only screen and (min-width: 1000px) {
-
     .header {
         background-color: black;
         position: relative;
         padding-bottom: 5.5rem;
     }
-    
+
     .nav {
         background-color: $white;
-        position: absolute; 
+        position: absolute;
         display: flex;
-        justify-content: space-between; 
+        justify-content: space-between;
         align-items: center;
         padding: 1rem 0;
         width: 90%;
         transform: translate(5.5%, 45%);
         z-index: 10;
 
-        &__logo{
+        &__logo {
             display: inline-block;
             margin-right: 1rem;
-
         }
 
         &__menu-mobile {
@@ -101,7 +107,7 @@
         }
 
         &__menu-web {
-            display: flex; 
+            display: flex;
             gap: 2rem;
 
             li {
@@ -117,17 +123,17 @@
                 text-decoration: none;
                 color: $black;
                 padding-bottom: 1rem;
-                display: block; 
-                transition: color 0.3s ease; 
+                display: block;
+                transition: color 0.3s ease;
 
                 &:hover {
-                    color: $beigetwo; 
+                    color: $beigetwo;
                 }
             }
         }
 
-        &__logo-web{
-            display:flex;
+        &__logo-web {
+            display: flex;
             align-items: center;
             gap: 0.5rem;
             text-decoration: none;
@@ -151,7 +157,7 @@
 
         &__logo-web-text h1,
         &__logo-web-text h2 {
-            margin:0;
+            margin: 0;
             font-family: $archivo;
             line-height: 1;
             letter-spacing: 2px;
@@ -166,29 +172,29 @@
             font-size: .9rem;
             font-weight: 300;
         }
+
         &__hamburger {
-            display: none;
+            display: none; 
         }
 
-        &__logo{
+        &__logo {
             display: none;
         }
 
         &__header-icons {
             margin-right: 2rem;
-            gap: 1.5rem; 
+            gap: 1.5rem;
 
-            img{
-                padding: 0.5rem; 
-                border: 2px solid $darkgrey; 
+            img {
+                padding: 0.5rem;
+                border: 2px solid $darkgrey;
                 transition: background-color 0.3s ease, border-color 0.3s ease;
             }
 
             img:hover {
-                background-color: $lightgrey; 
-                border-color: $beige; 
+                background-color: $lightgrey;
+                border-color: $beige;
             }
         }
-    
-}
+    }
 }
