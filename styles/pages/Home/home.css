@@ -3,6 +3,18 @@
   padding: 1.5rem;
   margin-top: 4rem;
 }
+@media only screen and (min-width: 1000px) {
+  .aboutus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, auto);
+    gap: 2rem;
+    align-items: center;
+    justify-items: center;
+    padding: 0;
+    margin-top: 6rem;
+  }
+}
 .aboutus__title {
   font-family: sans-serif;
   color: rgb(99, 96, 96);
@@ -10,6 +22,7 @@
   font-weight: bold;
   letter-spacing: 2px;
   margin-bottom: 1rem;
+  text-align: center;
 }
 .aboutus__caption {
   text-align: center;
@@ -40,24 +53,35 @@
   transition: background-color 0.3s, color 0.3s;
 }
 .aboutus__info {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+@media only screen and (min-width: 1000px) {
+  .aboutus__info {
+    flex-direction: row;
+  }
 }
 .aboutus__info__grey-img {
   width: 100%;
   height: 70%;
 }
-.aboutus__infoimg {
+@media only screen and (min-width: 1000px) {
+  .aboutus__info__grey-img {
+    width: 20%;
+  }
+}
+.aboutus__info img {
   justify-content: center;
   align-items: center;
 }
 .aboutus__info__caption {
-  font-family: old-standart, serif;
+  font-family: old-standard, serif;
   font-size: 24px;
   font-weight: 200;
   margin-bottom: 0.5rem;
   text-align: center;
-  align-content: center;
 }
 .aboutus__info__description {
   font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
@@ -65,21 +89,33 @@
   text-align: center;
   margin-bottom: 2.4rem;
 }
-@media only screen and (min-width: 1000px) {
-  .aboutus .nav__menu-mobile {
-    display: none;
+@media only screen and (max-width: 999px) {
+  .aboutus {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
-  .aboutus .aboutusimg {
-    width: 5%;
-    height: 5%;
+  .aboutus__title {
+    font-size: 18px;
   }
-  .aboutus .aboutus__info {
-    flex: 1;
-    margin-left: 3rem;
+  .aboutus__caption {
+    font-size: 28px;
   }
-  .aboutus .aboutus__button {
-    padding: 1rem 2rem;
+  .aboutus__description {
+    font-size: 16px;
+  }
+  .aboutus__button {
     font-size: 1rem;
+    padding: 1rem 2rem;
+  }
+  .aboutus__info {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .aboutus__info__grey-img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -325,8 +361,8 @@
   margin-bottom: 0.5rem;
 }
 .luxury .rooms__caption {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 3rem;
+  font-weight: 500;
   color: rgb(34, 34, 34);
 }
 .luxury .room__list {
