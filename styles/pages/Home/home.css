@@ -484,6 +484,18 @@
   padding: 2rem;
   font-family: "Archivo", "archivo-offline", "Roboto", sans-serif, arial;
 }
+@media only screen and (min-width: 1000px) {
+  .stats {
+    width: 70%;
+    flex-direction: row;
+    justify-content: space-between;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    padding: 3rem 0;
+  }
+}
 .stats__card__item {
   display: flex;
   flex-direction: column;
